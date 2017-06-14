@@ -1,3 +1,16 @@
+# Site config
+defaults:
+  -
+    scope:
+      path: "" # empty string means everywhere
+      type: "pages"
+    values:
+      layout: "default"
+
+author: "Coaxial"
+title: "Coaxial, software developer"
+description: "Coaxial's personal website. Everything you ever wanted to know about me."
+# Jekyll config
 markdown: kramdown
 exclude:
   - Gemfile

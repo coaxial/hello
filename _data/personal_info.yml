@@ -1,0 +1,20 @@
+current_city: Toronto
+current_employer:
+  name: Rangle
+  url: https://rangle.io
+past_employers:
+  - SweetIQ
+  - Busbud
+  - AdGear/Samsung
+online_profiles:
+  - site: GitHub
+    url: https://github.com/coaxial
+  - site: Twitter
+    url: https://twitter.com/@pypouj
+  - site: Medium
+    url: https://medium.com/@coaxial/latest
+  - site: LinkedIn
+    url: https://linkedin.com/in/pypouj
+  - site: Keybase
+    url: https://keybase.io/pypouj
+public_key_location: https://keybase.io/pypouj/key.asc
