@@ -11,6 +11,8 @@ online_profiles:
     url: https://github.com/coaxial
   - site: Twitter
     url: https://twitter.com/@pypouj
+  - site: Medium
+    url: https://medium.com/@coaxial/latest
   - site: LinkedIn
     url: https://linkedin.com/in/pypouj
   - site: Keybase
