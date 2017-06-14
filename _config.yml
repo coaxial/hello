@@ -11,6 +11,7 @@ author: "Coaxial"
 title: "Coaxial, software developer"
 description: "Coaxial's personal website. Everything you ever wanted to know about me."
 # Jekyll config
+theme: jekyll-theme-midnight
 markdown: kramdown
 exclude:
   - Gemfile
