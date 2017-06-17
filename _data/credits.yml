@@ -1,6 +1,6 @@
 - name: Jekyll
   url: https://jekyllrb.com
 - name: Font Awesome
-  url: https://fontawesome.io
+  url: http://fontawesome.io
 - name: GitHub Pages
   url: https://pages.github.com
