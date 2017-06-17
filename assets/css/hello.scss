@@ -20,3 +20,13 @@ footer {
   // integrated to jekyll, allowing the "invisible" tag
   margin-right: -4px;
 }
+
+#greeting__language {
+  text-align: center;
+}
+
+// the greeting subtext shouldn't have any bottom margin or it will add to the
+// existing bottom margin for the whole UI element
+#title > p {
+  margin: 0 0 0 0;
+}
