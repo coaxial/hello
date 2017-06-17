@@ -1,5 +1,7 @@
 ---
 ---
+@import "font-awesome";
+
 .contents {
   // the original font size is a tad too small
   font-size: 125%;
@@ -9,4 +11,11 @@ footer {
   // values are based on the ones used in #id for the midnight theme
   margin: 50px 0 0 0;
   padding: 5px 0 0 0;
+}
+
+.linklist__span {
+  // ugly hack to remove whitespace inserted by the liquid tag
+  // this won't be necessary anymore when the newer liquid version is
+  // integrated to jekyll, allowing the "invisible" tag
+  margin-right: -4px;
 }

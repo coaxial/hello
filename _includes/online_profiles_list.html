@@ -1,7 +1,0 @@
-{% for profile in site.data.personal_info.online_profiles %}
-  {% if profile == site.data.personal_info.online_profiles.last %}
-    and <a href="{{ profile.url }}">{{ profile.site }}</a>.
-  {% else %}
-    <a href="{{ profile.url }}">{{ profile.site }}</a>,
-  {% endif %}
-{% endfor %}
