@@ -1,5 +1,8 @@
 <footer>
-  © {{ site.author }} <script type="text/javascript">document.write(new
-    Date().getFullYear());</script>, 
-  {% include footer/credits.html %}
+  <p>
+    {% include footer/credits.html %}. Source code available on <a href="{{ site.repo }}">GitHub</a>.
+    <br>
+    © {{ site.author }} <script type="text/javascript">document.write(new
+  Date().getFullYear());</script>
+  </p>
 </footer>
