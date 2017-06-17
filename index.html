@@ -19,7 +19,9 @@ permalink: /
     array_to_sentence_string }}.
   </p>
   <p>
-    You can find me online on {% include online_profiles_list.html %}
+    You can find me online on 
+{% include link_list/list.html entries=site.data.online_profiles %}.
+
     My public key is available 
     <a href="{{ site.data.personal_info.public_key_location }}">here</a>.
   </p>

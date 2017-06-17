@@ -1,0 +1,9 @@
+{% for entry in include.entries %}
+  {% if entry == include.entries.last %}
+    and <span class="linklist__span">{% include link_list/entry.html
+      entry=entry %}</span>
+  {% else %}
+    <span class="linklist__span">{% include link_list/entry.html entry=entry
+      %}</span>,
+  {% endif %}
+{% endfor %}

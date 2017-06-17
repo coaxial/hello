@@ -1,0 +1,6 @@
+<a href="{{ entry.url | default: "#" }}">
+  {% if entry.fa_icon %}
+    <i class="fa fa-{{ entry.fa_icon }}"></i>
+  {% endif %}
+  {{ entry.name | default: "missing entry name" }}
+</a>
