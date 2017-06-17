@@ -9,7 +9,6 @@ group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
    gem "github-pages"
    gem "jekyll-theme-midnight", "~> 0.0.4"
-   gem "font-awesome-sass"
 end
 
 # Windows doesn't include zoneinfo files
