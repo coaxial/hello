@@ -10,6 +10,7 @@ defaults:
 author: "Coaxial"
 title: "Coaxial, software developer"
 description: "Coaxial's personal website. Everything you ever wanted to know about me."
+repo: "https://github.com/coaxial/hello"
 # Jekyll config
 theme: jekyll-theme-midnight
 markdown: kramdown
