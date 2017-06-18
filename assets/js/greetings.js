@@ -130,14 +130,13 @@ const greetings = {
 function getTimePeriod() {
   const hour = new Date().getHours();
 
-  switch (hour) {
-    case (hour >= 5 && hour < 12):
-      return 'morning';
-    case (hour >= 12 && hour < 17):
-      return 'afternoon';
+  if (hour >= 5 && hour < 12) {
+    return 'morning';
+  } else if (hour >= 12 && hour < 17) {
+    return 'afternoon';
+  } else {
+    return 'evening';
   }
-
-  return 'evening';
 }
 
 function randomGreeting(greetings) {
