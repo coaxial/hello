@@ -1,6 +1,6 @@
 'use strict';
 
-const greetings = {
+var greetings = {
   morning: [
     {
       language: 'Arabic',
@@ -128,7 +128,7 @@ const greetings = {
 };
 
 function getTimePeriod() {
-  const hour = new Date().getHours();
+  var hour = new Date().getHours();
 
   if (hour >= 5 && hour < 12) {
     return 'morning';
@@ -140,16 +140,16 @@ function getTimePeriod() {
 }
 
 function randomGreeting(greetings) {
-  const min = 0;
-  const max = greetings.length - 1;
-  const randomIndex = Math.floor(Math.random() * (max - min));
+  var min = 0;
+  var max = greetings.length - 1;
+  var randomIndex = Math.floor(Math.random() * (max - min));
 
   return greetings[randomIndex];
 };
 
-const greetingPhraseEl = document.querySelector('#greeting__phrase');
-const greetingLangEl = document.querySelector('#greeting__language');
-const greeting = randomGreeting(greetings[getTimePeriod()]);
+var greetingPhraseEl = document.querySelector('#greeting__phrase');
+var greetingLangEl = document.querySelector('#greeting__language');
+var greeting = randomGreeting(greetings[getTimePeriod()]);
 
-greetingPhraseEl.innerHTML = `${greeting.phrase}`;
-greetingLangEl.innerHTML = `(That's “good ${getTimePeriod()}” in ${greeting.language})`;
+greetingPhraseEl.innerHTML = greeting.phrase;
+greetingLangEl.innerHTML = "(That's “good " + getTimePeriod() + "” in " + greeting.language +")";
