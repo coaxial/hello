@@ -53,7 +53,7 @@ var greetings = {
     },
     {
       language: 'French',
-      phrase: 'Bonne après-midi!'
+      phrase: 'Bon après-midi!'
     },
     {
       language: 'German',
