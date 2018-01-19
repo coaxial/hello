@@ -1,9 +1,10 @@
 current_city: Toronto
 current_employer:
-  name: Rangle
-  url: https://rangle.io
+  name:
+  url:
 past_employers:
   - SweetIQ
   - Busbud
   - AdGear/Samsung
+  - Rangle
 public_key_location: https://keybase.io/pypouj/key.asc
