@@ -31,6 +31,45 @@ footer {
   margin: 0 0 0 0;
 }
 
+#back {
+  text-align: center;
+}
+
 #version {
   color: rgb(37, 37, 37);
+}
+
+label, .label-placeholder {
+  display: inline-block;
+  text-align: right;
+  width: 6em;
+}
+
+input, textarea {
+  background-color: #252525;
+  border-color: #f0e7d5;
+  box-sizing: border-box;
+  color: #f0e7d5;
+  padding: .25em;
+  width: 20em;
+}
+
+.form__send {
+  // padding-left: 10em;
+}
+
+button {
+  width: 10em;
+  position: relative;
+  margin-left: 5em;
+}
+
+form {
+  margin: 0 auto;
+  padding-top: 1.5em;
+  width: 27em;
+}
+
+form > div {
+  padding-bottom: 0.5em;
 }

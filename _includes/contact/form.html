@@ -1,0 +1,57 @@
+<form
+  action="https://getsimpleform.com/messages?form_api_token=8bd65d5707cc274ffd48b1437412555b"
+  method="post">
+  <div>
+    <label for="name">Name:</label>
+    <input
+      autocomplete="name"
+      autofocus
+      name="name"
+      required
+      type="text"
+    />
+  </div>
+
+  <div>
+    <label for="email">email:</label>
+    <input
+      autocomplete="email"
+      name="email"
+      required
+      type="email"
+    />
+  </div>
+
+  <div>
+    <label for="company">Company:</label>
+    <input
+      autocomplete="organization"
+      name="company"
+      placeholder="optional"
+      type="text"
+    />
+  </div>
+
+  <div>
+    <label for="message">Message:</label>
+    <textarea
+      name="message"
+      rows="8"
+      cols="28"
+      placeholder="Hello!"
+      required
+      spellcheck="true"
+    ></textarea>
+  </div>
+
+  <div class="form__send">
+    <div class="label-placeholder"></div>
+    <button type="submit">Send</button>
+  </div>
+
+  <input
+    type="hidden"
+    name="redirect_to"
+    value="https://64b.it/contact/message_sent"
+  />
+</form>
