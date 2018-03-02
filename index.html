@@ -7,7 +7,10 @@ permalink: /
   <p><small id="greeting__language"></small></p>
 </div>
 <div class="contents">
-  <p>I am Coaxial. I write software for companies of all sizes.<p>
+  <p>
+    I am Coaxial. I write software for companies of all sizes, I specialize in
+    web sites and web applications.
+  </p>
   <p>
     I enjoy repairing bicycles, traveling the world, scuba diving, Legos,
     and vegan food. I am bilingual and can discuss these things (amongst
@@ -18,9 +21,11 @@ permalink: /
     past, I've worked at {{ site.data.personal_info.past_employers |
     array_to_sentence_string }}.
   </p>
+  {% include coffee/meet.html available=true %}
+  {% include consulting/new_clients.html available=true %}
   <p>
     You can find me online on
-{% include link_list/list.html entries=site.data.online_profiles %}.
+    {% include link_list/list.html entries=site.data.online_profiles %}.
 
     My public key is available
     <a href="{{ site.data.personal_info.public_key_location }}">here</a>.
