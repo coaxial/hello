@@ -2,6 +2,14 @@
 ---
 @import "vendor/font-awesome/font-awesome";
 
+$breakpoint-desktop: 1024px;
+$colors: (
+  bg: #252525,
+  invisible: rgb(37, 37, 37),
+  link: #ffcc00,
+  text: #f0e7d5,
+);
+
 .contents {
   // the original font size is a tad too small
   font-size: 125%;
@@ -36,40 +44,60 @@ footer {
 }
 
 #version {
-  color: rgb(37, 37, 37);
+  color: #{map-get($colors, invisible)};
 }
 
-label, .label-placeholder {
-  display: inline-block;
-  text-align: right;
-  width: 6em;
-}
-
-input, textarea {
-  background-color: #252525;
-  border-color: #f0e7d5;
-  box-sizing: border-box;
-  color: #f0e7d5;
-  padding: .25em;
-  width: 20em;
-}
-
-.form__send {
-  // padding-left: 10em;
-}
-
-button {
-  width: 10em;
-  position: relative;
-  margin-left: 5em;
-}
-
-form {
+.contact_form {
   margin: 0 auto;
   padding-top: 1.5em;
-  width: 27em;
+  width: 100%;
+  label {
+    box-sizing: border;
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+
+  input, textarea {
+    background-color: #{map-get($colors, bg)};
+    border-color: #{map-get($colors, text)};
+    box-sizing: border-box;
+    color: #{map-get($colors, text)};
+    display: block;
+    padding: .25em;
+    width: 100%;
+  }
+
+  button {
+    display: block;
+    background-color: #{map-get($colors, bg)};
+    border: 1px solid #{map-get($colors, text)};
+    color: #{map-get($colors, text)};
+    margin: .25em auto 0 auto;
+    padding: .5em;
+    width: 7em;
+  }
 }
 
 form > div {
   padding-bottom: 0.5em;
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .contact_form {
+    width: 90%;
+    label {
+      display: inline-block;
+      text-align: right;
+      width: 15%;
+    }
+    input, textarea {
+      display: inline-block;
+      width: 70%;
+    }
+    .contact_form__send {
+      display: block;
+      margin: 0 auto;
+    }
+  }
 }
