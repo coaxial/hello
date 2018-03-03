@@ -71,10 +71,11 @@ footer {
   button {
     display: block;
     background-color: #{map-get($colors, bg)};
-    border: 2px solid #{map-get($colors, text)};
+    border: 1px solid #{map-get($colors, text)};
     color: #{map-get($colors, text)};
     margin: .25em auto 0 auto;
     padding: .5em;
+    width: 7em;
   }
 }
 
