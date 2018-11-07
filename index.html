@@ -8,8 +8,10 @@ permalink: /
 </div>
 <div class="contents">
   <p>
-    Hello, I am Coaxial and I currently live in {{ site.data.personal_info.current_city }}. I help businesses become more profitable using custom
-    built software solutions.
+    Hello, my name is Pierre and I currently live in {{
+    site.data.personal_info.current_city }}. I help businesses become more
+    profitable using custom
+    built software solutions: <a href="/our-approach">here is how I work</a>. 
   </p>
   <p>
     In the past, I have worked with companies such as {{
@@ -24,12 +26,10 @@ permalink: /
     and vegan food. I can speak French and English fluently.
   </p>
   <p>
-    You can find me online on
-    {% include link_list/list.html entries=site.data.online_profiles %}.
-
-    My public key is available
-    <a href="{{ site.data.personal_info.public_key_location }}">here</a>, and I
-    prefer receiving PGP encrypted email.
+    You can find me online on {% include link_list/list.html
+    entries=site.data.online_profiles %}.  My public key is available <a
+    href="{{ site.data.personal_info.public_key_location }}">here</a>, and I
+    love to receive PGP encrypted email.
   </p>
 </div>
 <script src="{{ 'assets/js/greetings.js' | relative_url }}"></script>
