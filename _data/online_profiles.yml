@@ -4,9 +4,6 @@
 - name: Twitter
   url: https://twitter.com/@pypouj
   fa_icon: twitter
-- name: Medium
-  url: https://medium.com/@coaxial/latest
-  fa_icon: medium
 - name: LinkedIn
   url: https://linkedin.com/in/pypouj
   fa_icon: linkedin

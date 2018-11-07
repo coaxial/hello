@@ -7,9 +7,9 @@ defaults:
     values:
       layout: "default"
 
-author: "Coaxial"
-title: "Coaxial, software developer"
-description: "Coaxial's personal website. Everything you ever wanted to know about me."
+author: "64b.it"
+title: "64b.it | custom-built software"
+description: "We deliver custom-built software to maximize your business' ROI."
 repo: "https://github.com/coaxial/hello"
 # Jekyll config
 theme: jekyll-theme-midnight

@@ -8,26 +8,28 @@ permalink: /
 </div>
 <div class="contents">
   <p>
-    I am Coaxial. I write software for companies of all sizes, I specialize in
-    websites and web applications.
+    Hello, I am Coaxial and I currently live in {{ site.data.personal_info.current_city }}. I help businesses become more profitable using custom
+    built software solutions.
   </p>
   <p>
-    I enjoy repairing bicycles, traveling the world, scuba diving, Legos,
-    and vegan food. I can speak French and English.
-  </p>
-  <p>
-    I currently live in {{ site.data.personal_info.current_city }}. In the
-    past, I've worked at {{ site.data.personal_info.past_employers |
+    In the past, I have worked with companies such as {{
+    site.data.personal_info.past_companies | array_to_sentence_string }} using
+    various technologies including {{ site.data.personal_info.technologies |
     array_to_sentence_string }}.
   </p>
+  {% include consulting/new_clients.html available=true availability='Q1 2019' %}
   {% include coffee/meet.html available=true %}
-  {% include consulting/new_clients.html available=true %}
+  <p>
+    I enjoy repairing bicycles, traveling the world, scuba diving, Legos,
+    and vegan food. I can speak French and English fluently.
+  </p>
   <p>
     You can find me online on
     {% include link_list/list.html entries=site.data.online_profiles %}.
 
     My public key is available
-    <a href="{{ site.data.personal_info.public_key_location }}">here</a>.
+    <a href="{{ site.data.personal_info.public_key_location }}">here</a>, and I
+    prefer receiving PGP encrypted email.
   </p>
 </div>
 <script src="{{ 'assets/js/greetings.js' | relative_url }}"></script>

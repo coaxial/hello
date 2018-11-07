@@ -2,9 +2,17 @@ current_city: Toronto
 current_employer:
   name:
   url:
-past_employers:
+past_companies:
   - SweetIQ
   - Busbud
-  - AdGear/Samsung
+  - AdGear
+  - Samsung
   - Rangle
+technologies:
+  - Ruby on Rails
+  - ReactJS
+  - Ansible
+  - containers
+  - NodeJS
+  - Postgres
 public_key_location: https://keybase.io/pypouj/key.asc
