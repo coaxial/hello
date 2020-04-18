@@ -153,9 +153,7 @@ function getTimePeriod() {
 }
 
 function randomGreeting(greetings) {
-  var min = 0;
-  var max = greetings.length - 1;
-  var randomIndex = Math.floor(Math.random() * (max - min));
+  var randomIndex = Math.floor(Math.random() * greetings.length);
 
   return greetings[randomIndex];
 };
