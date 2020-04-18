@@ -1,10 +1,15 @@
-'use strict';
+'use strict'
 
 const config = require('dotenv').config()
+const http = require('http')
 
-export function handler(event, context, callback) {
+function handler(event, context, callback) {
+  const weatherInWords = '%C'
+  const weatherIcon = '%c'
+  const temperature = '%t'
+  const outputFormat = `["${weatherInWords}", "${weatherIcon}", "${temperature}"]`
   http.get(
-    `https://wttr.in/${config.WEATHER_LOCATION}?format=%c`,
+    `http://wttr.in/${config.WEATHER_LOCATION}?format=${outputFormat}`,
     response => {
       const HTTP_OK = 200
       const HTTP_ERROR = 500
@@ -15,22 +20,29 @@ export function handler(event, context, callback) {
           null,
           {
             statusCode: HTTP_ERROR,
-            body: {
+            body: JSON.stringify({
               message: 'Weather API error.',
-            },
+            }),
           },
         )
       }
 
-      const rawData = ''
+      let rawData = ''
       response.setEncoding('utf-8')
       response.on('data', data => rawData += data)
       response.on('end', () => {
+        const json = JSON.parse(rawData)
+        const weather = {
+          words: json[0].toLowerCase(),
+          icon: json[1],
+          temp: json[2],
+        }
+
         return callback(
           null,
-          statusCode: HTTP_OK,
-          body: {
-            weatherIcon: response.body,
+          {
+            statusCode: HTTP_OK,
+            body: JSON.stringify({ weather }),
           },
         )
       })
@@ -40,10 +52,12 @@ export function handler(event, context, callback) {
       null,
       {
         statusCode: HTTP_ERROR,
-        body: {
+        body: JSON.stringify({
           message: 'Weather API error.',
-        },
+        }),
       },
     )
   })
 }
+
+module.exports = { handler }

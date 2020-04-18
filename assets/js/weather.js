@@ -3,13 +3,13 @@
 const request = new Request('/.netlify/functions/weather')
 
 fetch(request)
-  .then(response => {
-    const HTTP_OK = 200
-
-    if(response === HTTP_OK) {
+  .then(response => response.json())
+  .then(json => {
+    console.debug(json)
+    if(json.weather) {
       const weatherEl = document.querySelector('#weather')
 
-      weatherEl.innerHTML = ` (presently ${response.weatherIcon}) `
+      weatherEl.innerHTML = ` where it's ${json.weather.icon} (${json.weather.words}) and ${json.weather.temp} at the moment`
     }
   })
   // swallow error intentionally, just don't display the weather if call errors

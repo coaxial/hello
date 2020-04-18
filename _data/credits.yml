@@ -2,5 +2,7 @@
   url: https://jekyllrb.com
 - name: Font Awesome
   url: http://fontawesome.io
+- name: wttr.in
+  url: https://wttr.in
 - name: Netlify
   url: https://netlify.com
