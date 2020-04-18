@@ -1,6 +1,7 @@
 [build]
-  command = 'jekyll build && cd functions && npm i'
+  command = 'jekyll build'
   functions = 'functions'
   publish = '_site'
+  environment = { AWS_LAMBDA_JS_RUNTIME = 'nodejs12.x' }
 [dev]
   autoLaunch = true
