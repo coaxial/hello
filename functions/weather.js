@@ -3,6 +3,14 @@
 const config = require('dotenv').config()
 const fetch = require('node-fetch')
 
+function tempToWords(celsius) {
+  if (celsius < 5) { return 'rather cold' }
+  if (celsius >= 5 && celsius < 20) { return 'cool' }
+  if (celsius >= 20 && celsius < 27) { return 'nice' }
+  if (celsius >= 27) { return 'rather hot' }
+  return 'unknown'
+}
+
 function handler(event, context, callback) {
   const weatherInWords = '%C'
   const weatherIcon = '%c'
@@ -20,14 +28,17 @@ function handler(event, context, callback) {
       const weather = {
         words: json[0].toLowerCase(),
         icon: json[1],
-        temp: json[2],
+      }
+      const temp = {
+        value: json[2],
+        words: tempToWords(parseInt(json[2])),
       }
 
       return callback(
         null,
         {
           statusCode: HTTP_OK,
-          body: JSON.stringify({ weather }),
+          body: JSON.stringify({ temp, weather }),
         },
       )
     })
