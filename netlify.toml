@@ -1,0 +1,7 @@
+[build]
+  command = 'jekyll build && cd functions && npm i'
+  functions = 'functions'
+  publish = '_site'
+[dev]
+  environment = { WEATHER_LOCATION = 'tahiti' }
+  autolaunch = true

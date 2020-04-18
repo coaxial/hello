@@ -8,9 +8,9 @@ permalink: /
 </div>
 <div class="contents">
   <p>
-    Hello, my name is Pierre and I currently live in {{
-    site.data.personal_info.current_city }}. I help businesses become more
-    profitable using custom built software solutions. 
+    Hello, my name is Pierre. I currently live in {{
+    site.data.personal_info.current_location }}<span id="weather"></span>. I help
+    businesses become more profitable using custom built software solutions. 
   </p>
   <p>
     In the past, I have worked with companies such as {{
@@ -32,3 +32,4 @@ permalink: /
   </p>
 </div>
 <script src="{{ 'assets/js/greetings.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/weather.js' | relative_url }}"></script>

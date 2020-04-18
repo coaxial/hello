@@ -1,0 +1,23 @@
+{
+  "name": "hello-functions",
+  "version": "1.0.0",
+  "description": "Functions powering hello",
+  "main": "weather.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coaxial/hello.git"
+  },
+  "author": "coaxial",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coaxial/hello/issues"
+  },
+  "homepage": "https://github.com/coaxial/hello#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.0"
+  }
+}
