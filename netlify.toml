@@ -3,5 +3,4 @@
   functions = 'functions'
   publish = '_site'
 [dev]
-  environment = { WEATHER_LOCATION = 'tahiti' }
-  autolaunch = true
+  autoLaunch = true
