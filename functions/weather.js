@@ -1,6 +1,5 @@
 'use strict'
 
-const config = require('dotenv').config()
 const fetch = require('node-fetch')
 
 function tempToWords(celsius) {
@@ -19,7 +18,7 @@ function handler(event, context, callback) {
   // wttr.in has trouble fulfilling the request if output looks like an object,
   // so using an array instead.
   const outputFormat = `["${weatherInWords}", "${weatherIcon}", "${temperature}"]`
-  const url = `https://wttr.in/${config.WEATHER_LOCATION}?${metricUnits}&format=${outputFormat}`
+  const url = `https://wttr.in/${process.env.WEATHER_LOCATION}?${metricUnits}&format=${outputFormat}`
 
   fetch(url)
     .then(response => response.json())
