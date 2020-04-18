@@ -5,7 +5,6 @@ const request = new Request('/.netlify/functions/weather')
 fetch(request)
   .then(response => response.json())
   .then(json => {
-    console.debug(json)
     if(json.weather) {
       const weatherEl = document.querySelector('#weather')
       const icon = `<abbr title="${json.weather.words}">${json.weather.icon}</abbr>`
