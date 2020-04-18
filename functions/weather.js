@@ -30,7 +30,8 @@ function handler(event, context, callback) {
         icon: json[1],
       }
       const temp = {
-        value: json[2],
+        celsius: parseInt(json[2]),
+        fahrenheit: `${Math.round(parseInt(json[2]) * (9/5) + 32)}`,
         words: tempToWords(parseInt(json[2])),
       }
 

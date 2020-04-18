@@ -8,8 +8,10 @@ fetch(request)
     console.debug(json)
     if(json.weather) {
       const weatherEl = document.querySelector('#weather')
+      const icon = `<abbr title="${json.weather.words}">${json.weather.icon}</abbr>`
+      const temp = `<abbr title="${json.temp.fahrenheit}℉, ${json.temp.words}">${json.temp.celsius}℃</abbr>`
 
-      weatherEl.innerHTML = ` where it's ${json.weather.icon} (${json.weather.words}) and ${json.temp.value} (${json.temp.words}) at the moment`
+      weatherEl.innerHTML = ` (${icon}, ${temp})`
     }
   })
   // swallow error intentionally, just don't display the weather if call errors
