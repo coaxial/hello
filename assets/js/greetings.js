@@ -41,7 +41,11 @@ var greetings = {
     {
       language: 'Spanish',
       phrase: 'Buenos días!'
-    }
+    },
+    {
+      language: 'Swiss German',
+      phrase: 'Guete Morge!'
+    },
   ],
   afternoon: [
     { language: 'Arabic',
@@ -82,7 +86,12 @@ var greetings = {
     {
       language: 'Spanish',
       phrase: 'Buenas tardes!'
-    }
+    },
+    {
+      language: 'Swiss German',
+      phrase: 'Guete Nomitag!'
+    },
+
   ],
   evening: [
     { language: 'Arabic',
@@ -123,7 +132,11 @@ var greetings = {
     {
       language: 'Spanish',
       phrase: 'Buenas noches!'
-    }
+    },
+    {
+      language: 'Swiss German',
+      phrase: 'Guete Obig!'
+    },
   ]
 };
 
@@ -140,9 +153,7 @@ function getTimePeriod() {
 }
 
 function randomGreeting(greetings) {
-  var min = 0;
-  var max = greetings.length - 1;
-  var randomIndex = Math.floor(Math.random() * (max - min));
+  var randomIndex = Math.floor(Math.random() * greetings.length);
 
   return greetings[randomIndex];
 };
