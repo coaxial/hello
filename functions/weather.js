@@ -7,9 +7,10 @@ function handler(event, context, callback) {
   const weatherInWords = '%C'
   const weatherIcon = '%c'
   const temperature = '%t'
+  const metricUnits = 'm'
   const outputFormat = `["${weatherInWords}", "${weatherIcon}", "${temperature}"]`
   http.get(
-    `http://wttr.in/${config.WEATHER_LOCATION}?format=${outputFormat}`,
+    `http://wttr.in/${config.WEATHER_LOCATION}?${metricUnits}&format=${outputFormat}`,
     response => {
       const HTTP_OK = 200
       const HTTP_ERROR = 500
