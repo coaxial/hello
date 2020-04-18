@@ -31,7 +31,7 @@ function handler(event, context, callback) {
       }
       const temp = {
         celsius: parseInt(json[2]),
-        fahrenheit: `${Math.round(parseInt(json[2]) * (9/5) + 32)}`,
+        fahrenheit: Math.round(parseInt(json[2]) * (9/5) + 32),
         words: tempToWords(parseInt(json[2])),
       }
 
