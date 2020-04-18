@@ -4,8 +4,5 @@
 - name: Twitter
   url: https://twitter.com/@pypouj
   fa_icon: twitter
-- name: LinkedIn
-  url: https://linkedin.com/in/pypouj
-  fa_icon: linkedin
 - name: Keybase
   url: https://keybase.io/pypouj
