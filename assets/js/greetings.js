@@ -41,7 +41,11 @@ var greetings = {
     {
       language: 'Spanish',
       phrase: 'Buenos días!'
-    }
+    },
+    {
+      language: 'Swiss German',
+      phrase: 'Guete Morge!'
+    },
   ],
   afternoon: [
     { language: 'Arabic',
@@ -82,7 +86,12 @@ var greetings = {
     {
       language: 'Spanish',
       phrase: 'Buenas tardes!'
-    }
+    },
+    {
+      language: 'Swiss German',
+      phrase: 'Guete Nomitag!'
+    },
+
   ],
   evening: [
     { language: 'Arabic',
@@ -123,7 +132,11 @@ var greetings = {
     {
       language: 'Spanish',
       phrase: 'Buenas noches!'
-    }
+    },
+    {
+      language: 'Swiss German',
+      phrase: 'Guete Obig!'
+    },
   ]
 };
 
