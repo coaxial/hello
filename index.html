@@ -9,26 +9,25 @@ permalink: /
 <div class="contents">
   <p>
     Hello, my name is Pierre. I currently live in {{
-    site.data.personal_info.current_location }}<span id="weather"></span>. I help
-    businesses become more profitable using custom built software solutions. 
+    site.data.personal_info.current_location }}<span id="weather"></span>. 
   </p>
   <p>
-    In the past, I have worked with companies such as {{
-    site.data.personal_info.past_companies | array_to_sentence_string }} using
-    various technologies including {{ site.data.personal_info.technologies |
+    I build state-of-the-art frontend and backend applications with
+    technologies such as {{ site.data.personal_info.technologies |
     array_to_sentence_string }}.
   </p>
   {% include consulting/new_clients.html available=false availability='Q3 2019' %}
   {% include coffee/meet.html available=false %}
   <p>
     I enjoy repairing bicycles, building e-bikes, traveling the world, scuba
-    diving, Legos, and vegan food. I can speak French and English fluently.
+    diving, Legos, gardening, and vegan food. I can speak French and English
+    fluently.
   </p>
   <p>
     You can find me online on {% include link_list/list.html
     entries=site.data.online_profiles %}.  My public key is available <a
     href="{{ site.data.personal_info.public_key_location }}">here</a>, and I
-    love to receive PGP encrypted email.
+    love receiving PGP encrypted email.
   </p>
 </div>
 <script src="{{ 'assets/js/greetings.js' | relative_url }}"></script>

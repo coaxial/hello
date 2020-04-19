@@ -12,6 +12,7 @@ past_companies:
 technologies:
   - Ruby on Rails
   - ReactJS
+  - Angular 2
   - Ansible
   - containers
   - NodeJS

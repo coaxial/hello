@@ -9,7 +9,7 @@ defaults:
 
 author: "64b.it"
 title: "64b.it | custom-built software"
-description: "We deliver custom-built software to maximize your business' ROI."
+description: "State-of-the-art frontend and backend applications"
 repo: "https://github.com/coaxial/hello"
 # Jekyll config
 theme: jekyll-theme-midnight
