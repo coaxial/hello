@@ -15,7 +15,7 @@ repo: "https://github.com/coaxial/hello"
 theme: jekyll-theme-midnight
 markdown: kramdown
 include:
-  - assets/vendor/font-awesome/fonts
+  - assets/vendor/fontawesome
 exclude:
   - Gemfile
   - Gemfile.lock
