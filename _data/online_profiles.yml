@@ -1,9 +1,6 @@
 - name: GitHub
   url: https://github.com/coaxial
   fa_icon: github
-- name: Twitter
-  url: https://twitter.com/@pypouj
-  fa_icon: twitter
 - name: Keybase
   url: https://keybase.io/pypouj
   fa_icon: keybase
