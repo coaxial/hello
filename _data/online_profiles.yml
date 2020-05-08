@@ -1,6 +1,3 @@
 - name: GitHub
   url: https://github.com/coaxial
   fa_icon: github
-- name: Keybase
-  url: https://keybase.io/pypouj
-  fa_icon: keybase
