@@ -12,9 +12,8 @@ past_companies:
 technologies:
   - Ruby on Rails
   - ReactJS
-  - Angular 2
+  - Angular 2+
   - Ansible
   - containers
   - NodeJS
   - Postgres
-public_key_location: https://keybase.io/pypouj/key.asc
