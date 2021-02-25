@@ -1,0 +1,58 @@
+---
+projects:
+  - name: Tizinger
+    year: 2020
+    technologies: Golang, GraphQL
+    repo: github.com/coaxial/tizinger
+    description: >-
+      A command line tool to fetch a playlist from a GraphQL database,
+      search the matching songs on a music streaming service, and re-create the
+      playlist on that service. It supports <a href="fip.fr">FIP.fr</a> and <a
+      href="tidal.com">Tidal</a> out of the box, support for other services and
+      radios can easily be added, thanks to a modular plugin architecture. It
+      is fully unit tested and commented.
+  - name: Hello
+    year: 2017–Present
+    technologies: Vanilla JavaScript, Jekyll, Netlify, Serverless
+    repo: github.com/coaxial/hello
+    description: >-
+      Also know as this website. Features progressive enhancement (time of day
+      appropriate greeting in a random language on the homepage, current
+      weather where I live, current year in the footer) if JavaScript is
+      available without breaking if it isn't available, manipulates the DOM
+      directly without any framework, uses serverless functions, automated
+      preview deployments and releases through Netlify. Available at <a
+      href="https://64b.it" >64b.it</a>.
+  - name: YNAB_convert
+    technologies: Ruby, CSV
+    year: 2019
+    repo: github.com/coaxial/ynab_convert
+    description: >-
+      Command line tool to parse statements from financial institutions and
+      convert the data into a format <a href="https://www.youneedabudget.com/"
+      >YNAB4</a> understands to import the transactions. The gem supports 
+      Revolut and UBS (credit and debit) out of the box. It uses a plugin
+      architecture that enables adding other banks easily following a reference
+      implementation. It is fully unit tested and commented. Available as a
+      Ruby Gem: <a href="https://rubygems.org/gems/ynab_convert"
+      >rubygems.org/gems/ynab_convert</a>.
+  - name: node-bitly
+    technologies: NodeJS, OAuth, NPM package
+    year: 2015
+    repo: github.com/tanepiper/node-bitly/pull/11
+    description: >-
+      A contribution I made to the open source <a href="https://bit.ly"
+      >bit.ly</a> NPM package. I added OAuth handling, refactored the tests so
+      they're less coupled, and used fixtures to mock HTTP calls so the tests
+      are less flaky, have no side effects, and are much faster to run. It was
+      accepted and merged by the package maintainer. Available on NPM: <a
+      href="https://www.npmjs.com/package/bitly" >npmjs.com/package/bitly</a>.
+  - name: AdADay
+    technologies: NodeJS, Slack bot
+    year: 2016
+    repo: github.com/coaxial/adaday
+    description: >-
+      A Slack bot that scrapes <a href="http://culturepub.fr"
+      >culturepub.fr</a>, extracts one random video matching a set of
+      configurable criteria, and posts it to Slack at regular intervals. Fully
+      unit tested and documented, mocks HTTP calls for testing.

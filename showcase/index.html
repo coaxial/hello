@@ -1,0 +1,19 @@
+---
+type: pages
+permalink: /showcase/
+---
+<div id="title">
+  <h1>Select projects and open source contributions</h1>
+  <p id="back">
+    <small>{% include back.html %}</small>
+  </p>
+</div>
+<div class="contents">
+  <ul>
+    {% for project in site.data.showcase.projects %}
+    <li id="project">
+      {% include showcase/project.html project=project %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
