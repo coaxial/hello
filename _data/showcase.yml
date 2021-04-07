@@ -16,10 +16,10 @@ projects:
     technologies: Vanilla JavaScript, Jekyll, Netlify, Serverless
     repo: github.com/coaxial/hello
     description: >-
-      Also know as this website. Features progressive enhancement (time of day
-      appropriate greeting in a random language on the homepage, current
-      weather where I live, current year in the footer) if JavaScript is
-      available without breaking if it isn't available, manipulates the DOM
+      Also known as this website. Features progressive enhancement
+      (time-of-day-appropriate greeting in a random language on the homepage,
+      current weather where I live, current year in the footer) if JavaScript
+      is available without breaking if it isn't available, manipulates the DOM
       directly without any framework, uses serverless functions, automated
       preview deployments and releases through Netlify. Available at <a
       href="https://64b.it" >64b.it</a>.
