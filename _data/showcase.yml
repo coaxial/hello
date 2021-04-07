@@ -7,22 +7,22 @@ projects:
     description: >-
       A command line tool to fetch a playlist from a GraphQL database,
       search the matching songs on a music streaming service, and re-create the
-      playlist on that service. It supports <a href="fip.fr">FIP.fr</a> and <a
-      href="tidal.com">Tidal</a> out of the box, support for other services and
-      radios can easily be added, thanks to a modular plugin architecture. It
-      is fully unit tested and commented.
+      playlist on that service. It supports <a href="https://fip.fr">FIP.fr</a>
+      and <a href="https://tidal.com">Tidal</a> out of the box, support for
+      other services and radios can easily be added, thanks to a modular plugin
+      architecture. It is fully unit tested and commented.
   - name: Hello
     year: 2017–Present
     technologies: Vanilla JavaScript, Jekyll, Netlify, Serverless
     repo: github.com/coaxial/hello
     description: >-
-      Also know as this website. Features progressive enhancement (time of day
-      appropriate greeting in a random language on the homepage, current
-      weather where I live, current year in the footer) if JavaScript is
-      available without breaking if it isn't available, manipulates the DOM
+      Also known as this website. Features progressive enhancement
+      (time-of-day-appropriate greeting in a random language on the homepage,
+      current weather where I live, current year in the footer) if JavaScript
+      is available without breaking if it isn't available, manipulates the DOM
       directly without any framework, uses serverless functions, automated
       preview deployments and releases through Netlify. Available at <a
-      href="https://64b.it" >64b.it</a>.
+      href="https://64b.it">64b.it</a>.
   - name: YNAB_convert
     technologies: Ruby, CSV
     year: 2019
