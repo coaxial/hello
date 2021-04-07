@@ -22,7 +22,7 @@ projects:
       is available without breaking if it isn't available, manipulates the DOM
       directly without any framework, uses serverless functions, automated
       preview deployments and releases through Netlify. Available at <a
-      href="https://64b.it" >64b.it</a>.
+      href="https://64b.it">64b.it</a>.
   - name: YNAB_convert
     technologies: Ruby, CSV
     year: 2019
