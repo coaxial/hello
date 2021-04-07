@@ -7,10 +7,10 @@ projects:
     description: >-
       A command line tool to fetch a playlist from a GraphQL database,
       search the matching songs on a music streaming service, and re-create the
-      playlist on that service. It supports <a href="fip.fr">FIP.fr</a> and <a
-      href="tidal.com">Tidal</a> out of the box, support for other services and
-      radios can easily be added, thanks to a modular plugin architecture. It
-      is fully unit tested and commented.
+      playlist on that service. It supports <a href="https://fip.fr">FIP.fr</a>
+      and <a href="https://tidal.com">Tidal</a> out of the box, support for
+      other services and radios can easily be added, thanks to a modular plugin
+      architecture. It is fully unit tested and commented.
   - name: Hello
     year: 2017–Present
     technologies: Vanilla JavaScript, Jekyll, Netlify, Serverless
