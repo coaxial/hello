@@ -3,4 +3,4 @@
 all: dev
 
 dev:
-	@netlify dev
+	@npx netlify dev
