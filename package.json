@@ -18,5 +18,8 @@
   "homepage": "https://github.com/coaxial/hello#readme",
   "dependencies": {
     "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "netlify-cli": "^6.14.0"
   }
 }
