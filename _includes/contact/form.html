@@ -1,7 +1,5 @@
 <div class="contact_form">
-  <form
-    action="https://getsimpleform.com/messages?form_api_token=8bd65d5707cc274ffd48b1437412555b"
-    method="post">
+  <form name="contact" method="POST" action="/say_hi/message_sent" netlify>
     <div>
       <label for="name">Name:</label>
       <input
@@ -50,11 +48,5 @@
     <div class="contact_form__send">
       <button type="submit">Send</button>
     </div>
-
-    <input
-      type="hidden"
-      name="redirect_to"
-      value="https://64b.it/say_hi/message_sent"
-    />
   </form>
 </div>
