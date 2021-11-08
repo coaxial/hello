@@ -41,11 +41,11 @@ projects:
     year: 2015
     repo: github.com/tanepiper/node-bitly/pull/11
     description: >-
-      A contribution I made to the open source <a href="https://bit.ly"
-      >bit.ly</a> NPM package. I added OAuth handling, refactored the tests so
-      they're less coupled, and used fixtures to mock HTTP calls so the tests
-      are less flaky, have no side effects, and are much faster to run. It was
-      accepted and merged by the package maintainer. Available on NPM: <a
+      A contribution to the open source <a href="https://bit.ly">bit.ly</a> NPM
+      package. Added OAuth handling, refactored the tests so they're less
+      coupled, and used fixtures to mock HTTP calls so the tests are less
+      flaky, have no side effects, and are much faster to run. It was accepted
+      and merged by the package maintainer. Available on NPM: <a
       href="https://www.npmjs.com/package/bitly" >npmjs.com/package/bitly</a>.
   - name: AdADay
     technologies: NodeJS, Slack bot

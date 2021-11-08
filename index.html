@@ -14,9 +14,13 @@ permalink: /
   <p>
     I build state-of-the-art frontend and backend applications with
     technologies such as {{ site.data.personal_info.technologies |
-    array_to_sentence_string }}.
+    array_to_sentence_string }} to help businesses grow.
   </p>
-  {% include consulting/new_clients.html available=false availability='Q3 2019' %}
+  <p>
+    To learn more about some of my work, have a look at my <a
+      href="/showcase">featured projects and open source contributions</a>.
+  </p>
+  {% include consulting/new_clients.html available=true availability='Q1 2022' %}
   {% include coffee/meet.html available=false %}
   <p>
     I enjoy repairing bicycles, building e-bikes, traveling the world, scuba
@@ -27,10 +31,6 @@ permalink: /
     You can find me online on {% include link_list/list.html
     entries=site.data.online_profiles %}, or <a href="/say_hi">send me a
     message</a>.
-  </p>
-  <p>
-    To learn more about some of my projects, have a look at my <a
-      href="/showcase">featured projects and open source contributions</a>.
   </p>
 </div>
 <script src="{{ 'assets/js/greetings.js' | relative_url }}"></script>
