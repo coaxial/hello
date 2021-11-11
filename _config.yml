@@ -8,8 +8,8 @@ defaults:
       layout: "default"
 
 author: "64b.it"
-title: "64b.it | custom-built software"
-description: "State-of-the-art frontend and backend applications"
+title: "64b.it | Software Development & Quality Consultant"
+description: "Lower your maintenance costs, iterate faster, build software more efficiently."
 repo: "https://github.com/coaxial/hello"
 # Jekyll config
 theme: jekyll-theme-midnight
