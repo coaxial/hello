@@ -36,6 +36,17 @@ projects:
       implementation. It is fully unit tested and commented. Available as a
       Ruby Gem: <a href="https://rubygems.org/gems/ynab_convert"
       >rubygems.org/gems/ynab_convert</a>.
+  - name: cv-tools
+    technologies: Bash, NodeJS, AWS S3, Gulp, LaTeX
+    year: 2016
+    repo: https://github.com/coaxial/cv-tools
+    description: >-
+      A tool to manage my CV. It will automatically watch for changes to the
+      LaTeX file, recompile it for every change, and show me a preview of the
+      resulting PDF. Once the CV is ready, it will package it in a zipped and
+      password-protected archive and upload to S3 so that it can easily be
+      shared with interested parties. Each version of the CV contains a
+      hyperlink in its footer to download the most up to date version.
   - name: node-bitly
     technologies: NodeJS, OAuth, NPM package
     year: 2015
