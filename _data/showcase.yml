@@ -37,7 +37,7 @@ projects:
       Ruby Gem: <a href="https://rubygems.org/gems/ynab_convert"
       >rubygems.org/gems/ynab_convert</a>.
   - name: cv-tools
-    technologies: NodeJS, AWS S3, Gulp, LaTeX
+    technologies: Bash, NodeJS, AWS S3, Gulp, LaTeX
     year: 2016
     repo: https://github.com/coaxial/cv-tools
     description: >-
