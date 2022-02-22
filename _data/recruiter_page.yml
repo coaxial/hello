@@ -55,8 +55,15 @@ required_info:
     Interview process description, timeline, and time burden (how many calls,
     with whom, on-sites if any, take home test and amount of effort to complete
     it, leetcode-style test, etc.)
+  - >-
+    On-call/paging requirements (frequency + duration) if any, and how is it
+    compensated?
   - What, specifically, do you think makes my profile a good match for the job?
   - What size is the team? The company?
+  - Am I able to choose my own hardware, OS (Linux), IDE/text editor (vim)?
+  - >-
+    Does the company restrict administrative rights or filters internet access
+    in any way on employee's equipment?
   - How long has the position been open?
   - Is this a new opening or backfilling?
   - Are you the sole agent working this req?
