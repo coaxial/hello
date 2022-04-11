@@ -1,5 +1,13 @@
 ---
 projects:
+  - name: "Ansible roles"
+    year: 2017–Present
+    technologies: Ansible, YAML, DevOps
+    repo: galaxy.ansible.com/coaxial
+    description: >-
+      Several Ansible roles to setup and configure software I have needed in
+      my private or professional life. Roles are tested with Molecule and
+      published to Galaxy.
   - name: Tizinger
     year: 2020
     technologies: Golang, GraphQL
@@ -30,11 +38,11 @@ projects:
     description: >-
       Command line tool to parse statements from financial institutions and
       convert the data into a format <a href="https://www.youneedabudget.com/"
-      >YNAB4</a> understands to import the transactions. The gem supports 
-      Revolut and UBS (credit and debit) out of the box. It uses a plugin
-      architecture that enables adding other banks easily following a reference
-      implementation. It is fully unit tested and commented. Available as a
-      Ruby Gem: <a href="https://rubygems.org/gems/ynab_convert"
+      >YNAB4</a> understands to import the transactions. The gem supports
+      several banks out of the box, and performs currency conversion. It uses a
+      plugin architecture that enables adding other banks easily following a
+      reference implementation. It is fully unit tested and commented.
+      Available as a Ruby Gem: <a href="https://rubygems.org/gems/ynab_convert"
       >rubygems.org/gems/ynab_convert</a>.
   - name: cv-tools
     technologies: Bash, NodeJS, AWS S3, Gulp, LaTeX
