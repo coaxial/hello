@@ -2,6 +2,7 @@
 type: pages
 permalink: /
 ---
+
 <div id="title">
   <h1 id="greeting__phrase">Hello!</h1>
   <p><small id="greeting__language"></small></p>
@@ -12,15 +13,15 @@ permalink: /
     site.data.personal_info.current_location }}<span id="weather"></span>.
   </p>
   <p>
-    I help businesses and technical teams lower their maintenance costs,
-    iterate faster, and build software more efficiently through process
-    adjustments and automation.
+    I help businesses and technical teams lower their maintenance costs, iterate
+    faster, and build software more efficiently through process adjustments and
+    automation.
   </p>
-  {% include consulting/new_clients.html available=true availability='Q1 2022' %}
-  {% include coffee/meet.html available=false %}
+  {% include consulting/new_clients.html available=false availability='Q1 2022'
+  %} {% include coffee/meet.html available=false %}
   <p>
-    To see some of the code I wrote, have a look at my <a
-      href="/showcase">featured projects and open source contributions</a>.
+    To see some of the code I wrote, have a look at my
+    <a href="/showcase">featured projects and open source contributions</a>.
   </p>
   <p>
     I enjoy repairing bicycles, building e-bikes, traveling the world, scuba
@@ -29,8 +30,8 @@ permalink: /
   </p>
   <p>
     You can find me online on {% include link_list/list.html
-    entries=site.data.online_profiles %}, or <a href="/say_hi">send me a
-    message</a>.
+    entries=site.data.online_profiles %}, or
+    <a href="/say_hi">send me a message</a>.
   </p>
 </div>
 <script src="{{ 'assets/js/greetings.js' | relative_url }}"></script>
