@@ -2,15 +2,16 @@
 type: pages
 permalink: /say_hi/message_sent
 ---
+
 <div id="title">
   <h1>Thank you!</h1>
-  <p id="back">
-    <small>{% include back.html %}</small>
-  </p>
+  {% include back.html %}
 </div>
 <div class="contents">
   <p>Your message has been sent. I usually respond within a week.</p>
-  <p>You will be redirected to the homepage shortly (or click <a
-      href="/">here</a> if you'd rather not wait.)</p>
+  <p>
+    You will be redirected to the homepage shortly (or click
+    <a href="/">here</a> if you'd rather not wait.)
+  </p>
 </div>
 <script src="{{ 'assets/js/redirect-home.js' | relative_url }}"></script>

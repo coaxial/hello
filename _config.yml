@@ -1,11 +1,17 @@
 # Site config
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # empty string means everywhere
       type: "pages"
     values:
       layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /blog/:slug
+      layout: "post"
+      published: false
 
 author: "64b.it"
 title: "64b.it | Software Development & Quality Consultant"

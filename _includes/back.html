@@ -1,1 +1,11 @@
-<a href="/">Go back to the homepage</a>
+<div id="back">
+  {% if include.is_blog %}
+  <p>
+    <small><a href="/blog">Go back to the blog’s index</a></small>
+  </p>
+  {% endif %}
+
+  <p>
+    <small><a href="/">Go back to the homepage</a></small>
+  </p>
+</div>

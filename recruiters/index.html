@@ -2,43 +2,38 @@
 type: pages
 permalink: /recruiters/
 ---
+
 <div id="title">
   <h1>Intro call</h1>
-  <p id="back">
-    <small>{% include back.html %}</small>
-  </p>
+  {% include back.html %}
 </div>
 <div class="contents">
+  <p>Hello, and thank you for your interest.</p>
   <p>
-    Hello, and thank you for your interest.
+    As you can imagine, I am getting a lot of messages from recruiters wanting
+    to get on a call to discuss the specifics further.
   </p>
   <p>
-    As you can imagine, I am getting a lot of
-    messages from recruiters wanting to get on a call to discuss the specifics
-    further.
+    Unfortunately, it isn't possible for me to spend 20—30 minutes on calls with
+    each recruiter who asks, or I'd be doing nothing else all day.
   </p>
   <p>
-    Unfortunately, it isn't possible for me to spend 20—30 minutes on calls
-    with each recruiter who asks, or I'd be doing nothing else all day.
-  </p>
-  <p>
-    In order to save each of us time and streamline the process, I have
-    compiled a list of questions typically asked during these calls in the FAQ
-    below.
+    In order to save each of us time and streamline the process, I have compiled
+    a list of questions typically asked during these calls in the FAQ below.
   </p>
   <p class="bold">
     Please make sure to read this page to the end, the section after the FAQ
-    lists <a href="#required_info">the required information to include in your
-    reply</a>.
+    lists
+    <a href="#required_info"
+      >the required information to include in your reply</a
+    >.
   </p>
 
   <div class="faq" id="faq_top">
     <h2>FAQ</h2>
     {% for entry in site.data.recruiter_page.faq %}
     <p class="q_list"><a href="#q{{ forloop.index0 }}">{{ entry.q }}</a></p>
-    {% endfor %}
-
-    {% for entry in site.data.recruiter_page.faq %}
+    {% endfor %} {% for entry in site.data.recruiter_page.faq %}
     <div class="qa">
       <div id="q{{ forloop.index0 }}">{{ entry.q }}</div>
       <div>{{ entry.a }}</div>
@@ -60,6 +55,8 @@ permalink: /recruiters/
     </ul>
     <a href="#faq_top">Back to the top</a>
   </div>
-  <p>Once again, thank you for your interest. I am looking forward to reading
-    your reply if there is a match; good luck in your search otherwise.</p>
+  <p>
+    Once again, thank you for your interest. I am looking forward to reading
+    your reply if there is a match; good luck in your search otherwise.
+  </p>
 </div>
