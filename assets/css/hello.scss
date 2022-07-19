@@ -178,3 +178,20 @@ ul > li {
 //
 // Blog styles
 //
+
+.contents.blog {
+  margin: 0 10%;
+
+  h1 {
+    margin-bottom: 1em;
+    font-size: 2em;
+  }
+
+  h2 {
+    margin-top: 2em;
+  }
+
+  #intro {
+    font-style: italic;
+  }
+}

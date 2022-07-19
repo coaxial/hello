@@ -2,8 +2,13 @@
 layout: default
 ---
 
-<div id="title">
+<div id="title" class="blog">
   <h1>Blog</h1>
   {% include back.html is_blog=true %}
 </div>
-<div class="contents">{{ content }}</div>
+<div class="contents blog">
+  <h1>{{ page.title }}</h1>
+  <p id="intro">{{ page.intro }}</p>
+  {{ content }}
+</div>
+{% include blog/footer.html %}
