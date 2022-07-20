@@ -10,5 +10,11 @@ layout: default
   <h1>{{ page.title }}</h1>
   <p id="intro">{{ page.intro }}</p>
   {{ content }}
+  <p>
+    <a href="#title">Back to the top</a>
+  </p>
+  <p>
+    <a href="/blog/">Back to the blog's index</a>
+  </p>
+  {% include blog/footer.html is_post=true %}
 </div>
-{% include blog/footer.html %}
