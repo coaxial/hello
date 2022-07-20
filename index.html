@@ -21,7 +21,9 @@ permalink: /
   %} {% include coffee/meet.html available=false %}
   <p>
     To see some of the code I wrote, have a look at my
-    <a href="/showcase">featured projects and open source contributions</a>.
+    <a href="{% link showcase/index.html %}"
+      >featured projects and open source contributions</a
+    >.
   </p>
   {% include blog/frontpage.html %}
   <p>
@@ -32,7 +34,7 @@ permalink: /
   <p>
     You can find me online on {% include link_list/list.html
     entries=site.data.online_profiles %}, or
-    <a href="/say_hi">send me a message</a>.
+    <a href="{% link say_hi/index.html %}">send me a message</a>.
   </p>
 </div>
 <script src="{{ 'assets/js/greetings.js' | relative_url }}"></script>
