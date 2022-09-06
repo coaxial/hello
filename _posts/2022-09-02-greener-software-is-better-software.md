@@ -63,8 +63,8 @@ been produced, the carbon has been emitted whether the hardware is used for a
 couple of years only or longer; producing its replacement also emits carbon.
 
 If hardware is replaced later, emissions are reduced: a 2019 Dell R640 server
-costs 1290 kg of CO₂ equivalent (kgCO₂e) to produce[0]. Replacing it after four
-years (Dell's estimated product lifetime[1]) would have cost 323 kgCO₂e/year.
+costs 1290 kg of CO₂ equivalent (kgCO₂e) to produce[^0]. Replacing it after four
+years (Dell's estimated product lifetime[^1]) would have cost 323 kgCO₂e/year.
 But if replaced a year later, this number drops to 258 kgCO₂e/year.
 
 ### Sell decommissioned hardware instead of destroying/recycling it
@@ -196,7 +196,7 @@ looking after these installations for a hands-off implementation.
 
 After years of pandemic, remote work has become mainstream. It is not only a
 way to reduce emissions from healthcare (which causes between 1% and 5% of
-global emissions[2]) through lower rates of infectious diseases and lower
+global emissions[^2]) through lower rates of infectious diseases and lower
 stress levels from not sitting in traffic, it also reduces energy expenditure
 for office space and personal transportation.
 
@@ -221,23 +221,23 @@ city center directly.
 
 Along with remote work, this is becoming less and less of a radical idea:
 several companies in the UK have recently switched to 4 days a week at 100% pay
-for 100% productivity[3]. Working one day a week less improves quality of life,
+for 100% productivity[^3]. Working one day a week less improves quality of life,
 which in turn reduces stress and healthcare needs but also results in better
-output from employees[4].
+output from employees[^4].
 
 Making greener software requires more optimized and better-architected code
 which is more likely to happen when workers are healthier and happier.
 
 ## Conclusion
 
-The climate crisis has been looming for decades without much action[5], the
+The climate crisis has been looming for decades without much action[^5], the
 Russian invasion of Ukraine shook things up further by drastically raising
 energy prices. Energy shortages could be part of our near future: building
 software to use less energy and do it more efficiently is part of the solution.
 
 Besides making economical and environmental sense, it is also positive for an
 organization's public image. Generation Z is particularly sensitive to
-environmental issues[6], which influences their consumption choices.
+environmental issues[^6], which influences their consumption choices.
 
 Furthermore, we are likely entering an economical recession, and cost reduction
 makes even more sense in that context.
@@ -246,10 +246,10 @@ I hope some of the strategies in this post will inspire individual readers to
 advocate and push for change in the way software is built. Greener software is
 an emerging trend, and now is a good time to get ahead of the curve.
 
-[0]: https://archive.ph/YLvgJ, page 1, 7730 kgCO₂e × (16.6% from manufacturing + 0.1% from transportation) = 1290.91 kgCO₂e
-[1]: https://archive.ph/YLvgJ, table on page 2
-[2]: https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(20)30121-2/fulltext
-[3]: https://edition.cnn.com/2022/06/06/business/four-day-week-trial-uk/index.html
-[4]: https://www.bbc.com/worklife/article/20210819-the-case-for-a-shorter-workweek, "Evidence suggests that one of the biggest advantages of working fewer weekly hours is that it makes people better workers."
-[5]: https://www.theguardian.com/science/2021/jul/05/sixty-years-of-climate-change-warnings-the-signs-that-were-missed-and-ignored
-[6]: https://www.pewresearch.org/science/2021/05/26/gen-z-millennials-stand-out-for-climate-change-activism-social-media-engagement-with-issue/
+[^0]: https://archive.ph/YLvgJ, page 1, 7730 kgCO₂e × (16.6% from manufacturing + 0.1% from transportation) = 1290.91 kgCO₂e
+[^1]: https://archive.ph/YLvgJ, table on page 2
+[^2]: https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(20)30121-2/fulltext
+[^3]: https://edition.cnn.com/2022/06/06/business/four-day-week-trial-uk/index.html
+[^4]: https://www.bbc.com/worklife/article/20210819-the-case-for-a-shorter-workweek, "Evidence suggests that one of the biggest advantages of working fewer weekly hours is that it makes people better workers."
+[^5]: https://www.theguardian.com/science/2021/jul/05/sixty-years-of-climate-change-warnings-the-signs-that-were-missed-and-ignored
+[^6]: https://www.pewresearch.org/science/2021/05/26/gen-z-millennials-stand-out-for-climate-change-activism-social-media-engagement-with-issue/
