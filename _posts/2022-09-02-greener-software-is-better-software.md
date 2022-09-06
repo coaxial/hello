@@ -246,10 +246,10 @@ I hope some of the strategies in this post will inspire individual readers to
 advocate and push for change in the way software is built. Greener software is
 an emerging trend, and now is a good time to get ahead of the curve.
 
-[^0]: https://archive.ph/YLvgJ, page 1, 7730 kgCO₂e × (16.6% from manufacturing + 0.1% from transportation) = 1290.91 kgCO₂e
-[^1]: https://archive.ph/YLvgJ, table on page 2
-[^2]: https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(20)30121-2/fulltext
-[^3]: https://edition.cnn.com/2022/06/06/business/four-day-week-trial-uk/index.html
-[^4]: https://www.bbc.com/worklife/article/20210819-the-case-for-a-shorter-workweek, "Evidence suggests that one of the biggest advantages of working fewer weekly hours is that it makes people better workers."
-[^5]: https://www.theguardian.com/science/2021/jul/05/sixty-years-of-climate-change-warnings-the-signs-that-were-missed-and-ignored
-[^6]: https://www.pewresearch.org/science/2021/05/26/gen-z-millennials-stand-out-for-climate-change-activism-social-media-engagement-with-issue/
+[^0]: https://i.dell.com/sites/csdocuments/CorpComm_Docs/en/carbon-footprint-poweredge-r640.pdf or https://archive.ph/YLvgJ, page 1, 7730 kgCO₂e × (16.6% from manufacturing + 0.1% from transportation) = 1290.91 kgCO₂e
+[^1]: https://i.dell.com/sites/csdocuments/CorpComm_Docs/en/carbon-footprint-poweredge-r640.pdf or https://archive.ph/YLvgJ, table on page 2
+[^2]: https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(20)30121-2/fulltext or https://archive.ph/Bvr1N
+[^3]: https://edition.cnn.com/2022/06/06/business/four-day-week-trial-uk/index.html or https://archive.ph/2Vnob
+[^4]: https://www.bbc.com/worklife/article/20210819-the-case-for-a-shorter-workweek or https://archive.ph/D1YVa, "Evidence suggests that one of the biggest advantages of working fewer weekly hours is that it makes people better workers."
+[^5]: https://www.theguardian.com/science/2021/jul/05/sixty-years-of-climate-change-warnings-the-signs-that-were-missed-and-ignored or https://archive.ph/G8j6r
+[^6]: https://www.pewresearch.org/science/2021/05/26/gen-z-millennials-stand-out-for-climate-change-activism-social-media-engagement-with-issue/ or https://archive.ph/GMIH0
