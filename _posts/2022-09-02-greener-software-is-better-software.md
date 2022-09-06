@@ -204,7 +204,7 @@ Not every employee enjoys remote work, so a hybrid model where everyone is free
 to choose for themselves how much or how little they want to be remote might
 make the most sense.
 
-### Use trains rather than flights
+### Use trains rather than planes
 
 Flying is notoriously polluting and isn't always necessary. Meetings don't
 always need to happen in person across long distances and can sometimes be done
