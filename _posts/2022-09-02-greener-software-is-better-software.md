@@ -26,14 +26,14 @@ business also reduces its electricity, bandwidth, server, and hosting bills.
 
 ### It can lead to a better user experience (UX)
 
-Less demanding software runs better on recent hardware and on more (older)
-hardware by requiring less computation. Have you ever noticed how fast static
+By requiring less computation, less demanding software runs better on recent
+hardware and on more/older hardware. Have you ever noticed how fast static
 websites with little to no JavaScript (like this one) load compared to SPAs?
 This is because HTML, CSS, and a sprinkle of JavaScript are much easier to
 process and render, using less energy.
 
 Optimizing software to reduce its carbon footprint yields better UX, as long as
-the UX designers are involved early and make the right tradeoffs: less
+the UX designers are also involved early and make the right tradeoffs: less
 computationally intensive doesn't mean bare bones!
 
 ### It requires collecting metrics which are also useful for business decisions
@@ -43,13 +43,12 @@ isn't the most impactful way to go. Without metrics and application profiling,
 the engineering team will be missing out on areas that need optimization the
 most and spend time on marginal improvements instead.
 
-Once metrics exist, the business can also use them to better inform business
-decision and future decisions.
+Once metrics exist, the organization can also use them to make better business
+decisions.
 
 Designing software to report metrics encourages a more modular and flexible
 architecture which will be easier to maintain and extend for the lifetime of
-the software (just like automated testing as a requirement does, I might write
-a post on that topic in the future.)
+the software.
 
 Having metrics also opens the road to monitoring, which is a significant
 contributor to better quality software.
@@ -73,7 +72,7 @@ Hardware that the organization doesn't need anymore can be useful to other
 businesses or individuals. Almost every business I've worked with threw away
 vast quantities of 4–5 years old laptops, servers, monitors, furniture… Sending
 it to the recycler still means it will be destroyed (in most cases) rather than
-turned into a brand new item, and a fraction only of its materials will be
+turned into a brand new item. A fraction only of its materials will be
 recovered; the rest becoming e-waste.
 
 Instead, it might be worthwhile to pull the storage from it (which can be
@@ -136,11 +135,12 @@ packets but also in the extra hardware required for the extra traffic. By
 sending less data over shorter distances, not only is less carbon required for
 transmission, but it also reduces the hardware requirements to accommodate the
 traffic. And it results in less data to process for the client, which might
-also reduce power usage.
+also reduce power usage. This can be achieved in practice by using CDNs.
 
 Applications might also optimize their connections and keep them open longer
-rather than closing them each time. This reduces the number of handshakes
-required, resulting in lower traffic and computation requirements.
+rather than closing them each time. Protocols like HTTP2 enable this[^2]: it
+reduces the number of handshakes required, resulting in lower traffic and
+computation requirements.
 
 Reducing network use might sound contradictory to computation shifting, and it
 is. Each organization should consider the tradeoffs of each strategy and decide
@@ -185,7 +185,7 @@ encourages utilities to build even more renewable energy generation capacity.
 A step further than switching to clean energy is generating it. Solar panels
 are subsidized in many municipalities and pay for themselves rapidly.
 Efficiency has drastically improved over the last few years, and the cost has
-gone down dramatically.
+gone down drastically.
 
 Rooftop food gardens, bee hives, rainwater collection systems, or simply
 covering in grass will reduce the business' carbon output, mitigate urban heat,
@@ -196,7 +196,7 @@ looking after these installations for a hands-off implementation.
 
 After years of pandemic, remote work has become mainstream. It is not only a
 way to reduce emissions from healthcare (which causes between 1% and 5% of
-global emissions[^2]) through lower rates of infectious diseases and lower
+global emissions[^3]) through lower rates of infectious diseases and lower
 stress levels from not sitting in traffic, it also reduces energy expenditure
 for office space and personal transportation.
 
@@ -221,23 +221,23 @@ city center directly.
 
 Along with remote work, this is becoming less and less of a radical idea:
 several companies in the UK have recently switched to 4 days a week at 100% pay
-for 100% productivity[^3]. Working one day a week less improves quality of life,
+for 100% productivity[^4]. Working one day a week less improves quality of life,
 which in turn reduces stress and healthcare needs but also results in better
-output from employees[^4].
+output from employees[^5].
 
 Making greener software requires more optimized and better-architected code
 which is more likely to happen when workers are healthier and happier.
 
 ## Conclusion
 
-The climate crisis has been looming for decades without much action[^5], the
+The climate crisis has been looming for decades without much action[^6], the
 Russian invasion of Ukraine shook things up further by drastically raising
 energy prices. Energy shortages could be part of our near future: building
 software to use less energy and do it more efficiently is part of the solution.
 
 Besides making economical and environmental sense, it is also positive for an
 organization's public image. Generation Z is particularly sensitive to
-environmental issues[^6], which influences their consumption choices.
+environmental issues[^7], which influences their consumption choices.
 
 Furthermore, we are likely entering an economical recession, and cost reduction
 makes even more sense in that context.
@@ -248,8 +248,9 @@ an emerging trend, and now is a good time to get ahead of the curve.
 
 [^0]: https://i.dell.com/sites/csdocuments/CorpComm_Docs/en/carbon-footprint-poweredge-r640.pdf or https://archive.ph/YLvgJ, page 1, 7730 kgCO₂e × (16.6% from manufacturing + 0.1% from transportation) = 1290.91 kgCO₂e
 [^1]: https://i.dell.com/sites/csdocuments/CorpComm_Docs/en/carbon-footprint-poweredge-r640.pdf or https://archive.ph/YLvgJ, table on page 2
-[^2]: https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(20)30121-2/fulltext or https://archive.ph/Bvr1N
-[^3]: https://edition.cnn.com/2022/06/06/business/four-day-week-trial-uk/index.html or https://archive.ph/2Vnob
-[^4]: https://www.bbc.com/worklife/article/20210819-the-case-for-a-shorter-workweek or https://archive.ph/D1YVa, "Evidence suggests that one of the biggest advantages of working fewer weekly hours is that it makes people better workers."
-[^5]: https://www.theguardian.com/science/2021/jul/05/sixty-years-of-climate-change-warnings-the-signs-that-were-missed-and-ignored or https://archive.ph/G8j6r
-[^6]: https://www.pewresearch.org/science/2021/05/26/gen-z-millennials-stand-out-for-climate-change-activism-social-media-engagement-with-issue/ or https://archive.ph/GMIH0
+[^2]: https://web.dev/performance-http2/#one-connection-per-origin or https://archive.ph/Fw11Q#one-connection-per-origin
+[^3]: https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(20)30121-2/fulltext or https://archive.ph/Bvr1N
+[^4]: https://edition.cnn.com/2022/06/06/business/four-day-week-trial-uk/index.html or https://archive.ph/2Vnob
+[^5]: https://www.bbc.com/worklife/article/20210819-the-case-for-a-shorter-workweek or https://archive.ph/D1YVa, "Evidence suggests that one of the biggest advantages of working fewer weekly hours is that it makes people better workers."
+[^6]: https://www.theguardian.com/science/2021/jul/05/sixty-years-of-climate-change-warnings-the-signs-that-were-missed-and-ignored or https://archive.ph/G8j6r
+[^7]: https://www.pewresearch.org/science/2021/05/26/gen-z-millennials-stand-out-for-climate-change-activism-social-media-engagement-with-issue/ or https://archive.ph/GMIH0
