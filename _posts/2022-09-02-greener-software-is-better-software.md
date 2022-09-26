@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: "Greener software is better software"
 intro: >-
   This post was inspired by Asim Hussain's [Principles.Green](https://principles.green) personal project and website, along with current events.
