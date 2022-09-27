@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+slug: different
 title: "This time, it will be different!"
 intro: >-
   This post was inspired by Gerald Weinberg's book "The Secrets of Consulting"
