@@ -4,7 +4,9 @@ published: true
 slug: greener
 title: "Greener software is better software"
 intro: >-
-  This post was inspired by Asim Hussain's [Principles.Green](https://principles.green) personal project and website, along with current events.
+  This post was inspired by Asim Hussain's <a
+  href="https://principles.green">Principles.Green</a> personal project and
+  website, along with current events.
 ---
 
 The energy crisis following Russia's illegal invasion of Ukraine gave the world
