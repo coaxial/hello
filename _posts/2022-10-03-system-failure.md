@@ -23,17 +23,18 @@ is a [video](https://www.youtube.com/watch?v=ckBfbvOXDvU) demonstrating it
 one](https://www.youtube.com/watch?v=oMb_UKYHvto) instead).
 
 I recommend watching either video but if you can't, here is a summary: a
-company is making white/blue beads (depending on which video you watched) from
-a mix of white/blue and red beads. Workers are taught a specific and detailed
-way of scooping 50 beads from the mix and aren't allowed to deviate from the
-system. An inspector then counts the number of red beads in the scoop, and
-anything above an arbitrary number is deemed unsatisfactory. As time goes by,
-the company is struggling with quality issues from having too many red beads.
-To try and improve things, the company introduces incentives like firing the
-worst performers, bonuses for the best performers, company swag and posters
-encouraging everyone to meet the quality objective, etc. As quality doesn't
-improve and there are still too many red beads in most batches, the company
-eventually goes bankrupt.
+company makes a product from glass beads of two different colors. The final
+product's quality depends on its color purity: having as little red beads as
+possible in the final mix is the objective. Workers are taught a specific and
+detailed way of scooping 50 beads at a time from the mix of beads and aren't
+allowed to deviate from the method. An inspector then counts the number of red
+beads in the scoop, and anything above an arbitrary number is deemed
+unsatisfactory. As time goes by, the company struggles with quality issues from
+too many red beads. To try and improve things, the company introduces
+incentives like firing the worst performers, bonuses for the best performers,
+company swag and posters encouraging everyone to meet the quality objective,
+etc. As quality doesn't improve and there are still too many red beads in most
+batches, the company eventually goes bankrupt.
 
 As an outside observer, it's rather obvious that the outcome is 100% determined
 by the system and not by workers' skills. The overall number of red beads in
@@ -79,8 +80,8 @@ incident on someone rather than understanding what happened.
 
 Although most resources on postmortems talk about blameless postmortems without
 acknowledging the fact that humans are hard-wired to blame, they're still a
-good starting point for organizations to build their process. You could do
-worse than start with PagerDuty's guide on the topic[^1] for instance.
+good starting point for organizations to build their own process from.
+PagerDuty's guide on the topic[^1] is a good starting point, for instance.
 
 ## Fast, cheap, good; choose two
 
