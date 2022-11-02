@@ -18,10 +18,20 @@ title: "64b.it | Software Development & Quality Consultant"
 description: "Lower your maintenance costs, iterate faster, build software more efficiently."
 repo: "https://github.com/coaxial/hello"
 # Jekyll config
-theme: jekyll-theme-midnight
+remote_theme: pages-themes/midnight@v0.2.0
 markdown: kramdown
 include:
   - assets/vendor/fontawesome
 exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+plugins:
+  - jekyll-remote-theme

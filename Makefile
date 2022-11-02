@@ -3,4 +3,4 @@
 all: dev
 
 dev:
-	@npx netlify dev -c "jekyll serve --incremental --watch"
+	@npx netlify dev -c "jekyll serve --livereload --incremental --watch"

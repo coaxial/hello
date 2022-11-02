@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 source "https://rubygems.org"
 
-ruby "2.6.2"
+ruby "2.7.6"
 
-gem "jekyll", "~> 3.7.4"
+gem "jekyll"
 
 group :jekyll_plugins do
-   gem "jekyll-theme-midnight", "~> 0.1.0"
+   gem 'github-pages'
 end
 
 # Windows doesn't include zoneinfo files
