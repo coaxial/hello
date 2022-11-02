@@ -19,19 +19,5 @@ description: "Lower your maintenance costs, iterate faster, build software more 
 repo: "https://github.com/coaxial/hello"
 # Jekyll config
 remote_theme: pages-themes/midnight@v0.2.0
-markdown: kramdown
-include:
-  - assets/vendor/fontawesome
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
 plugins:
   - jekyll-remote-theme
