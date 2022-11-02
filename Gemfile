@@ -6,7 +6,8 @@ ruby "2.7.6"
 gem "jekyll"
 
 group :jekyll_plugins do
-   gem 'github-pages'
+   gem 'jekyll-remote-theme'
+   gem 'jekyll-seo-tag'
 end
 
 # Windows doesn't include zoneinfo files
