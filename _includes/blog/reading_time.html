@@ -1,0 +1,4 @@
+{% capture words %} {{ content | number_of_words }} {% endcapture %}
+<span class="reading-time">
+	Reading time: {{ words | divided_by: 190 | append: ' minutes' }}
+</span>
