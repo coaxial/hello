@@ -1,16 +1,37 @@
 <head>
   {% include analytics.html %}
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <title>{{ site.title }}</title>
-  <meta name="author" content="{{ site.author }}">
-  <meta name="description" content="{{ site.description }}">
-  <meta name="robots" content="index,follow">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <meta name="author" content="{{ site.author }}" />
+  <meta name="description" content="{{ site.description }}" />
+  <meta name="robots" content="index,follow" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, user-scalable=yes"
+  />
 
+  <!-- font awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
   <!-- theme -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.data['hash'] | relative_url }}">
+  <link
+    rel="stylesheet"
+    href="{{ '/assets/css/style.css?v=' | append: site.data['hash'] | relative_url }}"
+  />
   <!-- theme overrides -->
-  <link rel="stylesheet" href="{{ '/assets/css/hello.css?v=' | append: site.data['hash'] | relative_url }}">
-  <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
+  <link
+    rel="stylesheet"
+    href="{{ '/assets/css/hello.css?v=' | append: site.data['hash'] | relative_url }}"
+  />
+  <link
+    rel="shortcut icon"
+    type="image/x-icon"
+    href="{{ '/assets/favicon.ico' | relative_url }}"
+  />
 </head>
