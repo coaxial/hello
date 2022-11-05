@@ -14,7 +14,7 @@ defaults:
       published: false
 
 author: "64b.it"
-title: "64b.it | Software Development & Quality Consultant"
+title: "64b.it | Software Development & Quality Consulting"
 description: "Lower your maintenance costs, iterate faster, build software more efficiently."
 repo: "https://github.com/coaxial/hello"
 # Jekyll config
