@@ -14,7 +14,7 @@ intro: >-
 This may sound familiar if you've worked in (or led) a technical team: there is
 too much technical debt and much time is spent plugging the leaks or putting
 out fires rather than on work that delivers value to customers. And yet, there
-is no way to get time allocated for addressing the root causes: the show must
+is no way to get time allocated for addressing the root causes as the show must
 go on.
 
 That situation is more prevalent in organizations where the business and sales
@@ -24,13 +24,13 @@ teams have more influence than engineering on the product's roadmap.
 
 Debt (within reason) is an acceptable way of doing business. It's simply a cost
 effective way to keep going while not having enough revenue or cash flow to
-sustain the business. It is clear how much the debt costs and projecting
-whether it can be repaid or serviced over time.
+sustain the business. It is clear how much the debt costs, and whether it can
+be repaid or serviced over time.
 
-None of that applies to code. Technical debt is notoriously hard to measure,
+None of this applies to code. Technical debt is notoriously hard to measure,
 let alone quantify its servicing cost. It isn't possible to plug a rate into a
 spreadsheet and calculate that new work will take 5 or 10% longer to deliver
-because of technical debt: nobody knows the interest rate at the time when that
+because of technical debt: nobody knows the interest rate at the time when the
 debt is taken on. Only that there is bad technical debt and worse technical
 debt.
 
@@ -48,7 +48,7 @@ While using monetary debt to pay for a (code or physical) machine is an
 investment, paying for that code machine with _technical_ debt carries a subtle
 but sizeable difference.
 
-With code and technical debt is more like using the debt to buy a barely
+Financing code with technical debt is more like using debt to buy a barely
 functional machine that regularly breaks down, making it more and more
 expensive to just keep running over time. This hardly qualifies as an
 investment: that kind of asset will have a very hard time delivering enough
@@ -159,5 +159,5 @@ sharpen the code then!
     specific circumstances.
 
 [^1]:
-    and probably other functions as well, but I can only confidently talk
+    And probably other functions as well, but I can only confidently talk
     about what I have the most experience with: engineering.
