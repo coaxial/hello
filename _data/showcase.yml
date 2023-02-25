@@ -2,7 +2,7 @@
 projects:
   - name: "UserScript for Ricardo.ch"
     year: 2023
-    technologies: JavaScript
+    technologies: JavaScript, MutationObserver
     repo: github.com/coaxial/tampermonkey-scripts/blob/master/ricardoch/adlinks.js
     description: >-
       This is a TamperMonkey script that enhances the user reviews page on
