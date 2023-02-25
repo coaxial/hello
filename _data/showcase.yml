@@ -1,5 +1,15 @@
 ---
 projects:
+  - name: "UserScript for Ricardo.ch"
+    year: 2023
+    technologies: JavaScript
+    repo: github.com/coaxial/tampermonkey-scripts/blob/master/ricardoch/adlinks.js
+    description: >-
+      A TamperMonkey script to enhance the user reviews page on Ricardo.ch. It
+      replaces the article number with a link to the actual ad to make it
+      easier to evaluate a seller's trustworthiness while buying. Because of
+      the Ricardo.ch webapp's architecture, the script makes extensive use of
+      MutationObservers.
   - name: "Ansible roles"
     year: 2017–Present
     technologies: Ansible, YAML, DevOps
