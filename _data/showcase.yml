@@ -5,19 +5,18 @@ projects:
     technologies: JavaScript, MutationObserver
     repo: github.com/coaxial/tampermonkey-scripts/blob/master/ricardoch/adlinks.js
     description: >-
-      This is a TamperMonkey script that enhances the user reviews page on
-      Ricardo.ch. Its purpose is to simplify the evaluation of a seller's
-      trustworthiness while purchasing by replacing the article number with a
-      direct link to the actual ad. Due to the architecture of the Ricardo.ch
-      webapp, the script employs MutationObservers extensively.
-  - name: "Ansible roles"
-    year: 2017–Present
-    technologies: Ansible, YAML, DevOps
-    repo: galaxy.ansible.com/coaxial
+      A TamperMonkey script that enhances the user reviews page on Ricardo.ch.
+      Its purpose is to simplify the evaluation of a seller's trustworthiness
+      while purchasing by replacing the article number with a direct link to
+      the actual ad. Due to the architecture of the Ricardo.ch webapp, the
+      script employs MutationObservers extensively.
+  - name: "3D printed parts and models"
+    year: 2021–Present
+    technologies: 3D printing, CAD
+    repo: printables.com/social/144560-oplak/models
     description: >-
-      Several Ansible roles to setup and configure software I have needed in
-      my private or professional life. Roles are tested with Molecule and
-      published to Galaxy.
+      Various models for 3D printing, designed from scratch using CAD software.
+      I use a Prusa Mini printer with PLA and PETG filament.
   - name: Tizinger
     year: 2020
     technologies: Golang, GraphQL
@@ -54,6 +53,14 @@ projects:
       reference implementation. It is fully unit tested and commented.
       Available as a Ruby Gem: <a href="https://rubygems.org/gems/ynab_convert"
       >rubygems.org/gems/ynab_convert</a>.
+  - name: "Ansible roles"
+    year: 2017–Present
+    technologies: Ansible, YAML, DevOps
+    repo: galaxy.ansible.com/coaxial
+    description: >-
+      Several Ansible roles to setup and configure software I have needed in
+      my private or professional life. Roles are tested with Molecule and
+      published to Galaxy.
   - name: cv-tools
     technologies: Bash, NodeJS, AWS S3, Gulp, LaTeX
     year: 2016
