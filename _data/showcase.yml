@@ -1,5 +1,17 @@
 ---
 projects:
+  - name: "Maid rubygem"
+    year: 2023–Present
+    technologies: Ruby
+    repo: github.com/maid/maid
+    description: >-
+      "Hazel for hackers" – A gem to keep your filesystem tidy by periodically
+      running custom rules.<br>
+      I became the maintainer for this gem as its current author doesn't have
+      as much time to work on it anymore. I have so far updated the code to
+      work with Ruby 2.7 and 3+, configured automation for testing and
+      releasing, triaged the backlog of issues. <a
+      href="https://rubygems.org/gems/maid">rubygems.org/gems/maid</a>
   - name: "UserScript for Ricardo.ch"
     year: 2023
     technologies: JavaScript, MutationObserver
