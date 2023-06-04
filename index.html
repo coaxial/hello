@@ -9,37 +9,48 @@ permalink: /
 </div>
 <div class="contents">
   <p>
-    Hello, my name is Pierre. I currently live in {{
-    site.data.personal_info.current_location }}<span id="weather"></span>.
+    Hello, my name is Pierre, I currently live in {{
+    site.data.personal_info.current_location }}<span id="weather"></span> from
+    where I help businesses build better software.
   </p>
   <p>
-    I help businesses and technical teams lower their maintenance costs, iterate
-    faster, and build software more efficiently through process adjustments and
-    automation.
+    Over the last {{ "now" | date: "%Y" | minus: 2012 }} years, I've
+    successfully worked with companies in North America and Switzerland on
+    things like:
   </p>
+  <ul>
+    <li>Tackling technical debt and legacy code</li>
+    <li>Process optimization and automation</li>
+    <li>CI/CD (pipelines, preview deployments, etc.)</li>
+    <li>Automated testing</li>
+    <li>Developer mentoring and training</li>
+    <li>Decreasing page load times</li>
+    <li>Lowering code's carbon footprint</li>
+  </ul>
   {% include consulting/new_clients.html available=false availability='Q1 2022'
   %} {% include coffee/meet.html available=false %}
   <p>
-    To see some of the code I wrote, have a look at my
+    I regularly contribute to open source software, and maintain the
+    <a href="https://github.com/maid/maid">Maid rubygem</a> (along with its
+    original author <a href="http://www.benjaminoakes.com">Ben Oakes</a>). To
+    see some of my code, have a look at my
     <a href="{% link showcase/index.html %}"
-      >featured projects and open source contributions</a
+      >featured open source software contributions</a
     >.
   </p>
   {% include blog/frontpage.html %}
   <p>
-    I enjoy repairing bicycles, building e-bikes, traveling the world, scuba
-    diving, mushroom hunting, and vegan food. I can speak French and English
-    fluently.
+    In my spare time, I enjoy repairing bicycles and other things, building
+    e-bikes, traveling the world, scuba diving, mushroom foraging, and vegan
+    food.
   </p>
   <p>
-    I also maintain the <a href="https://github.com/maid/maid">Maid rubygem</a>,
-    along with its original author
-    <a href="http://www.benjaminoakes.com">Ben Oakes</a>.
+    <a href="{% link say_hi/index.html %}">Send me a message</a> to get in
+    touch, I speak French and English fluently.
   </p>
   <p>
     You can find me online on {% include link_list/list.html
-    entries=site.data.online_profiles %}, or
-    <a href="{% link say_hi/index.html %}">send me a message</a>.
+    entries=site.data.online_profiles %}.
   </p>
 </div>
 <script src="{{ 'assets/js/greetings.js' | relative_url }}"></script>
