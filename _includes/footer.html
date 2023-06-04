@@ -1,13 +1,7 @@
 <footer>
   <p>{% include footer/credits.html %}.</p>
   <p id="carbon">{% include footer/carbon.html %}</p>
-  <p>
-    ©
-    <script>
-      document.write("2016–" + new Date().getFullYear() + ", ");
-    </script>
-    {{ site.author }}
-  </p>
+  <p>©2016–{{ "now" | date: "%Y" }} {{ site.author }}</p>
   <p>
     <small id="version">{{ site.data['hash'] }} — {{ site.time }}</small>
   </p>

@@ -1,0 +1,18 @@
+name: Update current year on pages
+
+on:
+  schedule:
+    # On *-01-01 00:01, see https://crontab.guru/#1_0_1_1_*
+    - cron: 1 0 1 1 *
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Mask hook ID in logs
+        run: |
+          echo "::add-mask::${{ secrets.NETLIFY_REBUILD_HOOK_ID }}"
+      - name: Trigger site rebuild
+        run: |
+          curl -X POST -d '{}' https://api.netlify.com/build_hooks/${{ secrets.NETLIFY_REBUILD_HOOK_ID }}?trigger_title=Yearly+scheduled+rebuild
