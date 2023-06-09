@@ -12,8 +12,8 @@ intro: >-
 
 ## Used books are great...
 
-Despite owning a Kobo as my eReader, I still enjoy reading paper books from
-time to time. However, printed books are made out of dead trees and I'd rather
+Despite using a Kobo as my eReader, I still enjoy reading paper books from time
+to time. However, printed books are made out of dead trees and I'd rather
 rescue a second hand book than create demand for a new one.
 
 [BookFinder](https://bookfinder.com) is a great resource to find used books and
@@ -61,8 +61,8 @@ extension. But the userscript works just as well.
 ## Conclusion
 
 I hope this script will be useful, and that you'll consider buying used books
-before new ones. Most of the books I purchased this way were actually new and I
-couldn't tell they were second hand.
+instead of new ones. Most of the books I purchased this way were actually new
+and I couldn't tell they were second hand.
 
 Fairly recent books are available too, the one featured in the screenshots was
 first published in Februray 2023 and has been available used since April 2023.
