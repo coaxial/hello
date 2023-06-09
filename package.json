@@ -22,6 +22,6 @@
     "website-carbon-badges": "^1.1.3"
   },
   "devDependencies": {
-    "netlify-cli": "^6.14.0"
+    "netlify-cli": "^15.4.1"
   }
 }
