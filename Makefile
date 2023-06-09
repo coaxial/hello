@@ -1,4 +1,4 @@
-.PHONY: dev all
+.PHONY: all dev clean vendor-npm-deps build
 VENDOR_DIR = assets/vendor
 
 all: dev
