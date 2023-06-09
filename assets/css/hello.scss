@@ -1,6 +1,8 @@
 ---
 ---
 
+// Concatenate all CSS/SCSS files into this one so that there is only one CSS
+// file to download by the browser.
 @use "midnight";
 @use "../vendor/fontawesome-free/scss/fontawesome.scss";
 @use "../vendor/fontawesome-free/scss/brands.scss";
