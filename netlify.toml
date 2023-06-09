@@ -21,7 +21,8 @@
     contexts = [
       'production',
       'branch-deploy',
-      'deploy-preview'
+      'deploy-preview',
+      'dev'
     ]
 
   # Optionally, override the default options for the minification
