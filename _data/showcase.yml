@@ -76,7 +76,7 @@ projects:
   - name: cv-tools
     technologies: Bash, NodeJS, AWS S3, Gulp, LaTeX
     year: 2016
-    repo: https://github.com/coaxial/cv-tools
+    repo: github.com/coaxial/cv-tools
     description: >-
       A tool to manage my CV. It will automatically watch for changes to the
       LaTeX file, recompile it for every change, and show me a preview of the
