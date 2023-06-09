@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/coaxial/hello#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
     "node-fetch": "^2.6.7",
     "website-carbon-badges": "^1.1.3"
   },
