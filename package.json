@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "netlify-cli": "^6.14.0",
+    "netlify-plugin-checklinks": "^4.1.1",
     "netlify-plugin-minify-html": "^0.3.1"
   }
 }
