@@ -33,13 +33,6 @@
 [[plugins]]
   package = "netlify-plugin-checklinks"
 
-  [plugins.inputs]
-    contexts = [
-      'production',
-      'branch-deploy',
-      'deploy-preview'
-    ]
-
     # An array of glob patterns for pages on your site Recursive traversal will
     # start from these
     entryPoints = [ "*.html", ]
