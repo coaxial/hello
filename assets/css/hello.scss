@@ -1,6 +1,11 @@
 ---
 ---
 
+@use "midnight";
+@use "../vendor/fontawesome-free/scss/fontawesome.scss";
+@use "../vendor/fontawesome-free/scss/brands.scss";
+@use "../vendor/website-carbon-badges/b.min.css";
+
 $breakpoint-desktop: 1024px;
 $colors: (
   bg: #252525,
