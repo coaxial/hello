@@ -47,6 +47,9 @@ _site: assets/vendor
 	@echo "Done."
 	@echo "Minifying JS..."
 	@for js in $$(find "$(DIST_DIR)"/assets/js -type f -name '*.js'); do \
-		npx terser $${js} --compress --mangle --output $${js}; \
+		npx terser $${js} \
+		--compress toplevel=true \
+		--mangle toplevel=true \
+		--output $${js}; \
 	done
 	@echo "Done."
