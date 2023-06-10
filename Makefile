@@ -1,5 +1,6 @@
 .PHONY: all dev clean
 VENDOR_DIR = assets/vendor
+DIST_DIR = dist
 
 all: dev
 
@@ -7,7 +8,7 @@ dev: $(VENDOR_DIR)
 	@npx netlify dev
 
 clean:
-	-rm -rf _site/ .sass-cache .jekyll-metadata "$(VENDOR_DIR)"
+	-rm -rf _site/ .sass-cache .jekyll-metadata "$(VENDOR_DIR)" "$(DIST_DIR)"
 
 $(VENDOR_DIR):
 	@echo 'Remember to run `nvm use && npm i` beforehand.'
@@ -28,22 +29,21 @@ _site: assets/vendor
 	@bundle exec jekyll build
 
 dist: _site
-	@for f in $$(find $^ -type f -name '*.html'); do \
-		echo "Minifying $${f}..."; \
-		npx html-minifier-terser \
-		--collapse-whitespace \
-		--collapse-boolean-attributes \
-		--decode-entities \
-		--minify-urls true \
-		--remove-comments \
-		--remove-optional-tags \
-		--remove-redundant-attributes \
-		--remove-script-type-attributes \
-		--remove-tag-whitespace \
-		--use-short-doctype \
-		--minify-css true \
-		--minify-js true \
-		$${f} \
-		--output $${f}; \
-		echo "Done."; \
-	done
+	@echo "Minifying..."
+	@npx html-minifier-terser \
+	--collapse-whitespace \
+	--collapse-boolean-attributes \
+	--decode-entities \
+	--remove-comments \
+	--remove-optional-tags \
+	--remove-redundant-attributes \
+	--remove-script-type-attributes \
+	--remove-tag-whitespace \
+	--use-short-doctype \
+	--minify-css false \
+	--minify-js false \
+	--minify-urls true \
+	--input-dir $^ \
+	--output-dir "$(DIST_DIR)" \
+	--file-ext html
+	@echo "Done."
