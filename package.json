@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "html-minifier-terser": "^7.2.0",
-    "netlify-cli": "^15.4.1"
+    "netlify-cli": "^15.4.1",
+    "terser": "^5.17.7"
   }
 }
