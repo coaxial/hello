@@ -27,7 +27,7 @@ $(VENDOR_DIR):
 _site: assets/vendor
 	@export JEKYLL_ENV=production
 	@bundle exec jekyll build
-	@echo "Minifying..."
+	@echo "Minifying HTML..."
 	@npx html-minifier-terser \
 	--collapse-whitespace \
 	--collapse-boolean-attributes \
@@ -44,4 +44,9 @@ _site: assets/vendor
 	--input-dir "$(DIST_DIR)" \
 	--output-dir "$(DIST_DIR)" \
 	--file-ext html
+	@echo "Done."
+	@echo "Minifying JS..."
+	@for js in $$(find "$(DIST_DIR)"/assets/js -type f -name '*.js'); do \
+		npx terser $${js} --compress --mangle --output $${js}; \
+	done
 	@echo "Done."
