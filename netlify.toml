@@ -1,5 +1,5 @@
 [build]
-  command = 'make dist'
+  command = 'make _site'
   functions = 'functions'
   publish = 'dist'
   environment = { AWS_LAMBDA_JS_RUNTIME = 'nodejs16.x' }

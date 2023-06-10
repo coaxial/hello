@@ -1,6 +1,6 @@
-.PHONY: all dev clean
+.PHONY: all dev clean build
 VENDOR_DIR = assets/vendor
-DIST_DIR = dist
+DIST_DIR = _site
 
 all: dev
 
@@ -27,8 +27,6 @@ $(VENDOR_DIR):
 _site: assets/vendor
 	@export JEKYLL_ENV=production
 	@bundle exec jekyll build
-
-dist: _site
 	@echo "Minifying..."
 	@npx html-minifier-terser \
 	--collapse-whitespace \
@@ -43,7 +41,7 @@ dist: _site
 	--minify-css false \
 	--minify-js false \
 	--minify-urls true \
-	--input-dir $^ \
+	--input-dir "$(DIST_DIR)" \
 	--output-dir "$(DIST_DIR)" \
 	--file-ext html
 	@echo "Done."
