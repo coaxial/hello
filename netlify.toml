@@ -1,10 +1,21 @@
 [build]
-  command = 'make build'
+  command = 'make _site'
   functions = 'functions'
   publish = '_site'
   environment = { AWS_LAMBDA_JS_RUNTIME = 'nodejs16.x' }
+[build.processing.css]
+  bundle = true
+  minify = true
+[build.processing.js]
+  bundle = true
+  minify = true
+[build.processing.images]
+  compress = true
+[build.processing.html]
+  pretty_urls = true
 [dev]
   autoLaunch = true
+  command = 'jekyll serve --livereload --incremental --watch'
 [[headers]]
   for = "/*"
   [headers.values]
