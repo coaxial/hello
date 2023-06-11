@@ -20,3 +20,7 @@
   for = "/*"
   [headers.values]
     Permissions-Policy = "interest-cohort=()"
+[[redirects]]
+  from = '/*'
+  to = '/woops'
+  status = 404
