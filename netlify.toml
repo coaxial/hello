@@ -1,7 +1,7 @@
 [build]
-  command = 'make _site'
+  command = 'make dist'
   functions = 'functions'
-  publish = '_site'
+  publish = 'dist'
   environment = { AWS_LAMBDA_JS_RUNTIME = 'nodejs16.x' }
 [build.processing.css]
   bundle = true
