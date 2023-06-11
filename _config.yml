@@ -13,6 +13,14 @@ defaults:
       layout: "post"
       published: false
 
+exclude:
+  - Makefile
+  - CNAME
+  - netlify.toml
+  - package.json
+  - package-lock.json
+  - README.md
+
 author: "64b.it"
 title: "64b.it | Software Development & Quality Consulting"
 description: "Lower your maintenance costs, iterate faster, build software more efficiently."
