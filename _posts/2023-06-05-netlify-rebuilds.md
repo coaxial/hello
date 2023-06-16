@@ -3,6 +3,8 @@ layout: post
 published: true
 slug: scheduled-action
 title: "How I'm using GitHub Actions to avoid stale data on this website"
+description: How to use scheduled GitHub Actions to periodically rebuild this
+  website?
 intro: >-
   In this post, I'm showing how I leverage a scheduled GitHub Action to
   automatically rebuild this website just after New Year's Day and avoid stale

@@ -3,6 +3,8 @@ layout: post
 published: true
 slug: used
 title: "Buying used books on BookFinder, without feeding Amazon"
+description: Why and how I created an extension to highlight Amazon-owned
+  businesses on BookFinder.com
 intro: >-
   BookFinder is a great resource to buy used paper books all over the world,
   but a number of results on the site are Amazon-owned businesses. Why

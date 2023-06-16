@@ -3,6 +3,7 @@ layout: post
 published: true
 slug: greener
 title: "Greener software is better software"
+description: How to make software greener?
 intro: >-
   This post was inspired by Asim Hussain's <a
   href="https://principles.green">Principles.Green</a> personal project and
