@@ -39,7 +39,7 @@ results. It's now easy to buy used books without giving Amazon any business!
 
 Here is what it looks like (click to enlarge):
 
-[![Before/after](/assets/images/posts/used/animated.gif)](/assets/images/posts/used/animated.gif)
+[![Before/after](/assets/images/posts/used/animated.webp)](/assets/images/posts/used/animated.webp)
 
 Amazon results are still clickable, but they're clearly marked and easy to
 avoid.
