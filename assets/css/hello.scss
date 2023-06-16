@@ -47,8 +47,15 @@ footer {
 
 // the greeting subtext shouldn't have any bottom margin or it will add to the
 // existing bottom margin for the whole UI element
-#title > p {
+#title > #greeting__language-container {
   margin: 0 0 0 0;
+}
+
+#title > .heading {
+  font-weight: normal;
+  font-size: 40px;
+  text-align: center;
+  line-height: 36px;
 }
 
 .back {
