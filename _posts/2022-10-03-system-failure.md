@@ -3,6 +3,7 @@ layout: post
 published: true
 slug: sysfail
 title: "Low quality is a failure of the system, not the individuals"
+description: Is your organization enforcing a system that guarantees failure?
 intro: >-
   Most organizations have some sort of system in place for making software. It's
   been tweaked over the years, maybe even designed by expensive consultants with

@@ -3,6 +3,7 @@ layout: post
 published: true
 slug: knives
 title: "A better analogy for technical debt: dull knives"
+description: Why is a better analogy required for technical debt?
 intro: >-
   Conveying the importance of remediating technical debt to non-technical
   people and managers is often a challenge. I think part of the difficulty

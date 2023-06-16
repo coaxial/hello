@@ -3,6 +3,7 @@ layout: post
 published: true
 slug: different
 title: "This time, it will be different!"
+description: How to manage and reduce risk when making changes to software?
 intro: >-
   This post was inspired by Gerald Weinberg's book "The Secrets of Consulting"
   and his observation that "nothing new ever works."
