@@ -35,7 +35,11 @@ $(VENDOR_DIR)/fontawesome: $(VENDOR_DIR)
 	@cp node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css "$(VENDOR_DIR)"/fontawesome/css/
 	@cp node_modules/@fortawesome/fontawesome-free/css/brands.min.css "$(VENDOR_DIR)"/fontawesome/css/
 	@cp node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.* "$(VENDOR_DIR)"/fontawesome/webfonts/
-	@@# Fix path to webfonts in CSS files
+	@# Remove unneeded glyphs from fontawesome
+	@echo "Removing unused FontAwesome glyphs..."
+	@./scripts/fa-subset.js
+	@echo "Done."
+	@# Fix path to webfonts in CSS files
 	@sed -i 's/..\/webfonts/..\/vendor\/fontawesome\/webfonts/g' "$(VENDOR_DIR)"/fontawesome/css/fontawesome.min.css
 	@sed -i 's/..\/webfonts/..\/vendor\/fontawesome\/webfonts/g' "$(VENDOR_DIR)"/fontawesome/css/brands.min.css
 
