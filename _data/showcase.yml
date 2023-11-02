@@ -1,5 +1,11 @@
 ---
 projects:
+  - name: "Bookfinder.com Amazon avoidance"
+    year: 2023
+    technologies: JavaScript
+    repo: github.com/coaxial/tampermonkey-scripts/blog/master/bookfindercom/noamazon.js
+    description: >-
+      A TamperMonkey script to point out Amazon-owned second-hand bookstores when searching for used books on bookfinder.com. <a href="/blog/used">More details about it on my blog</a>.
   - name: "Maid rubygem"
     year: 2023–Present
     technologies: Ruby
