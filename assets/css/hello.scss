@@ -45,6 +45,9 @@ footer {
   text-align: center;
 }
 
+#location {
+  text-decoration: line-through;
+}
 // the greeting subtext shouldn't have any bottom margin or it will add to the
 // existing bottom margin for the whole UI element
 #title > #greeting__language-container {
