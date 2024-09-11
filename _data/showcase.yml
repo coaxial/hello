@@ -74,7 +74,7 @@ projects:
   - name: "Ansible roles"
     year: 2017–Present
     technologies: Ansible, YAML, DevOps
-    repo: galaxy.ansible.com/coaxial
+    repo: galaxy.ansible.com/ui/standalone/namespaces/1337
     description: >-
       Several Ansible roles to setup and configure software I have needed in
       my private or professional life. Roles are tested with Molecule and
