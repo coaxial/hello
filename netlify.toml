@@ -2,10 +2,8 @@
   command = 'make dist'
   functions = 'functions'
   publish = 'dist'
-  environment = { AWS_LAMBDA_JS_RUNTIME = 'nodejs16.x' }
 [context.production.environment]
   JEKYLL_ENV = 'production'
-  AWS_LAMBDA_JS_RUNTIME = 'nodejs16.x'
 [build.processing.css]
   bundle = true
   minify = true
