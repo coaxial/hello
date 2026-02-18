@@ -20,7 +20,7 @@
   package = "netlify-plugin-minify-html"
 [dev]
   autoLaunch = true
-  command = 'jekyll serve --livereload --incremental --watch'
+  command = 'bundle exec jekyll serve --livereload --incremental --watch'
 [[headers]]
   for = "/*"
   [headers.values]
