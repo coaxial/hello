@@ -36,7 +36,11 @@ function tempToWords(celsius: number): string {
   return "unknown";
 }
 
-function handler(event: any, context: any, callback: (error: any, response: any) => void): void {
+function handler(
+  event: any,
+  context: any,
+  callback: (error: any, response: any) => void,
+): void {
   const weatherInWords: string = "%C";
   const weatherIcon: string = "%c";
   const temperature: string = "%t";
@@ -66,8 +70,6 @@ function handler(event: any, context: any, callback: (error: any, response: any)
       });
     })
     .catch((error: any): void => {
-      console.debug(process.env.SENTRY_DSN);
-
       Sentry.captureException(error);
 
       return callback(null, {

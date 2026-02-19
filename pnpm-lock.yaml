@@ -21,6 +21,9 @@ importers:
         specifier: ^1.1.3
         version: 1.1.3
     devDependencies:
+      '@types/node':
+        specifier: ^20.0.0
+        version: 20.19.33
       clean-css-cli:
         specifier: ^5.6.2
         version: 5.6.3
@@ -38,13 +41,19 @@ importers:
         version: 16.2.7
       netlify-cli:
         specifier: ^17.23.1
-        version: 17.23.1(@types/node@25.3.0)(picomatch@2.3.1)
+        version: 17.23.1(@types/node@20.19.33)(picomatch@2.3.1)
       prettier:
         specifier: ^3.8.1
         version: 3.8.1
       terser:
         specifier: ^5.17.7
         version: 5.30.4
+      ts-node:
+        specifier: ^10.9.0
+        version: 10.9.1(@types/node@20.19.33)(typescript@5.1.6)
+      typescript:
+        specifier: ^5.0.0
+        version: 5.1.6
 
 packages:
 
@@ -1162,8 +1171,8 @@ packages:
   '@types/mysql@2.15.27':
     resolution: {integrity: sha512-YfWiV16IY0OeBfBCk8+hXKmdTKrKlwKN1MNKAPBu5JYxLwBEZl7QzeEpGnlZb3VMGJrrGmB84gXiH+ofs/TezA==}
 
-  '@types/node@25.3.0':
-    resolution: {integrity: sha512-4K3bqJpXpqfg2XKGK9bpDTc6xO/xoUP/RBWS7AtRMug6zZFaRekiLzjVtAoZMquxoAbzBvy5nxQ7veS5eYzf8A==}
+  '@types/node@20.19.33':
+    resolution: {integrity: sha512-Rs1bVAIdBs5gbTIKza/tgpMuG1k3U/UMJLWecIMxNdJFDMzcM5LOiLVRYh3PilWEYDIeUDv7bpiHPLPsbydGcw==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -4726,8 +4735,8 @@ packages:
   uncrypto@0.1.3:
     resolution: {integrity: sha512-Ql87qFHB3s/De2ClA9e0gsnS6zXG27SkTiSJwjCc9MebbfapQfuPzumMIUMi38ezPZVNFcHI9sUIepeQfw8J8Q==}
 
-  undici-types@7.18.2:
-    resolution: {integrity: sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==}
+  undici-types@6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
   unenv@1.9.0:
     resolution: {integrity: sha512-QKnFNznRxmbOF1hDgzpqrlIf6NC5sbZ2OJ+5Wl3OX8uM+LUJXbj4TXvLJCtwbPTmbMHCLIz6JLKNinNsMShK9g==}
@@ -5282,7 +5291,7 @@ snapshots:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.4
       '@types/istanbul-reports': 3.0.1
-      '@types/node': 25.3.0
+      '@types/node': 20.19.33
       '@types/yargs': 16.0.4
       chalk: 4.1.2
 
@@ -5355,7 +5364,7 @@ snapshots:
       yaml: 2.8.2
       yargs: 17.7.2
 
-  '@netlify/build@29.41.2(@opentelemetry/api@1.8.0)(@types/node@25.3.0)(picomatch@2.3.1)':
+  '@netlify/build@29.41.2(@opentelemetry/api@1.8.0)(@types/node@20.19.33)(picomatch@2.3.1)':
     dependencies:
       '@bugsnag/js': 7.22.7
       '@netlify/blobs': 7.3.0
@@ -5412,7 +5421,7 @@ snapshots:
       strip-ansi: 7.1.2
       supports-color: 9.4.0
       terminal-link: 3.0.0
-      ts-node: 10.9.1(@types/node@25.3.0)(typescript@5.1.6)
+      ts-node: 10.9.1(@types/node@20.19.33)(typescript@5.1.6)
       typescript: 5.1.6
       uuid: 9.0.1
       yargs: 17.7.2
@@ -6236,13 +6245,13 @@ snapshots:
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 25.3.0
+      '@types/node': 20.19.33
 
   '@types/http-cache-semantics@4.0.2': {}
 
   '@types/http-proxy@1.17.8':
     dependencies:
-      '@types/node': 25.3.0
+      '@types/node': 20.19.33
 
   '@types/istanbul-lib-coverage@2.0.4': {}
 
@@ -6256,11 +6265,11 @@ snapshots:
 
   '@types/mysql@2.15.27':
     dependencies:
-      '@types/node': 25.3.0
+      '@types/node': 20.19.33
 
-  '@types/node@25.3.0':
+  '@types/node@20.19.33':
     dependencies:
-      undici-types: 7.18.2
+      undici-types: 6.21.0
 
   '@types/normalize-package-data@2.4.4': {}
 
@@ -6270,7 +6279,7 @@ snapshots:
 
   '@types/pg@8.15.6':
     dependencies:
-      '@types/node': 25.3.0
+      '@types/node': 20.19.33
       pg-protocol: 1.11.0
       pg-types: 2.2.0
 
@@ -6278,7 +6287,7 @@ snapshots:
 
   '@types/tedious@4.0.14':
     dependencies:
-      '@types/node': 25.3.0
+      '@types/node': 20.19.33
 
   '@types/yargs-parser@20.2.1': {}
 
@@ -6288,7 +6297,7 @@ snapshots:
 
   '@types/yauzl@2.10.0':
     dependencies:
-      '@types/node': 25.3.0
+      '@types/node': 20.19.33
     optional: true
 
   '@typescript-eslint/types@5.62.0': {}
@@ -8783,12 +8792,12 @@ snapshots:
 
   nested-error-stacks@2.1.1: {}
 
-  netlify-cli@17.23.1(@types/node@25.3.0)(picomatch@2.3.1):
+  netlify-cli@17.23.1(@types/node@20.19.33)(picomatch@2.3.1):
     dependencies:
       '@bugsnag/js': 7.22.7
       '@fastify/static': 6.12.0
       '@netlify/blobs': 7.3.0
-      '@netlify/build': 29.41.2(@opentelemetry/api@1.8.0)(@types/node@25.3.0)(picomatch@2.3.1)
+      '@netlify/build': 29.41.2(@opentelemetry/api@1.8.0)(@types/node@20.19.33)(picomatch@2.3.1)
       '@netlify/build-info': 7.13.2
       '@netlify/config': 20.12.3
       '@netlify/edge-bundler': 12.0.0(supports-color@9.4.0)
@@ -10144,14 +10153,14 @@ snapshots:
 
   triple-beam@1.3.0: {}
 
-  ts-node@10.9.1(@types/node@25.3.0)(typescript@5.1.6):
+  ts-node@10.9.1(@types/node@20.19.33)(typescript@5.1.6):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.8
       '@tsconfig/node12': 1.0.9
       '@tsconfig/node14': 1.0.1
       '@tsconfig/node16': 1.0.2
-      '@types/node': 25.3.0
+      '@types/node': 20.19.33
       acorn: 8.15.0
       acorn-walk: 8.3.2
       arg: 4.1.3
@@ -10215,7 +10224,7 @@ snapshots:
 
   uncrypto@0.1.3: {}
 
-  undici-types@7.18.2: {}
+  undici-types@6.21.0: {}
 
   unenv@1.9.0:
     dependencies:
