@@ -1,8 +1,5 @@
-"use strict";
-
-const Sentry = require("./_shared/sentry");
-
-const nodeFetch = require("node-fetch");
+import Sentry from "./_shared/sentry";
+import nodeFetch from "node-fetch";
 
 interface Temp {
   celsius: number;
@@ -36,11 +33,11 @@ function tempToWords(celsius: number): string {
   return "unknown";
 }
 
-function handler(
+export const handler = (
   event: any,
   context: any,
   callback: (error: any, response: any) => void,
-): void {
+): void => {
   const weatherInWords: string = "%C";
   const weatherIcon: string = "%c";
   const temperature: string = "%t";
@@ -77,6 +74,4 @@ function handler(
         body: JSON.stringify({ error }),
       });
     });
-}
-
-module.exports = { handler };
+};

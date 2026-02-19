@@ -1,5 +1,3 @@
-'use strict'
-
 interface WeatherData {
   weather?: {
     words: string;

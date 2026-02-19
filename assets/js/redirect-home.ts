@@ -1,5 +1,3 @@
-'use strict';
-
 setTimeout((): void => {
   window.location.href = "/";
 }, 5000);

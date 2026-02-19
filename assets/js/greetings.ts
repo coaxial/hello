@@ -1,5 +1,3 @@
-'use strict';
-
 interface Greeting {
   language: string;
   phrase: string;

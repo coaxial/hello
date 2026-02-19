@@ -1,4 +1,4 @@
-const sentry = require("@sentry/node");
+import * as sentry from "@sentry/node";
 
 sentry.init({
   dsn: process.env.SENTRY_DSN,
@@ -10,4 +10,4 @@ sentry.init({
   ],
 });
 
-module.exports = sentry;
+export default sentry;
