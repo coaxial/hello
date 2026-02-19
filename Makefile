@@ -6,15 +6,12 @@ DIST_DIR = dist
 all: dev
 
 dev: $(SITE_DIR)
-	@JEKYLL_ENVIRONMENT=dev npx netlify dev --context dev
+	@JEKYLL_ENVIRONMENT=dev pnpm dlx netlify dev --context dev
 
 clean:
 	-rm -rf .sass-cache .jekyll-metadata "$(VENDOR_DIR)" "$(DIST_DIR)" "$(SITE_DIR)"
 
 $(VENDOR_DIR):
-	@# `nvm use` doesn't work in the Makefile's context, so when running
-	@# locally then remind me to run `npm i` with the correct node version
-	@echo 'Remember to run `nvm use && npm i` beforehand.'
 	@mkdir -p "$(VENDOR_DIR)"
 
 $(VENDOR_DIR)/website-carbon-badges: $(VENDOR_DIR)
@@ -36,7 +33,7 @@ $(VENDOR_DIR)/fontawesome: $(VENDOR_DIR)
 	@cp node_modules/@fortawesome/fontawesome-free/css/brands.min.css "$(VENDOR_DIR)"/fontawesome/css/
 	@cp node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.* "$(VENDOR_DIR)"/fontawesome/webfonts/
 	@# Remove unneeded glyphs from fontawesome
-	@echo "Removing unused FontAwesome glyphs..."
+	@echo "Removing unused FontAwesome glyphs…"
 	@./scripts/fa-subset.js
 	@echo "Done."
 	@# Fix path to webfonts in CSS files
@@ -44,6 +41,7 @@ $(VENDOR_DIR)/fontawesome: $(VENDOR_DIR)
 	@sed -i 's/..\/webfonts/..\/vendor\/fontawesome\/webfonts/g' "$(VENDOR_DIR)"/fontawesome/css/brands.min.css
 
 $(SITE_DIR): $(VENDOR_DIR) $(VENDOR_DIR)/website-carbon-badges $(VENDOR_DIR)/fontawesome
+	@pnpm run build:ts  # Compile TS before Jekyll build
 	@export JEKYLL_ENV=production
 	@bundle exec jekyll build
 
@@ -51,14 +49,14 @@ $(DIST_DIR): $(SITE_DIR)
 	@mkdir -p "$(DIST_DIR)"
 	@# Move all files to dist/ unchanged, next steps will minify HTML, JS,
 	@# CSS
-	@echo "Moving files..."
+	@echo "Moving files…"
 	@for dir in $$(find "$(SITE_DIR)" -maxdepth 1 -type d -printf %P\ ); do \
 		cp -r "$(SITE_DIR)/$${dir}" "$(DIST_DIR)/$${dir}"; \
 	done
 	@echo "Done."
 	@# Dealing with HTML files
-	@echo "Minifying HTML..."
-	@npx html-minifier-terser \
+	@echo "Minifying HTML…"
+	@pnpm dlx html-minifier-terser \
 		--collapse-whitespace \
 		--collapse-boolean-attributes \
 		--decode-entities \
@@ -76,21 +74,21 @@ $(DIST_DIR): $(SITE_DIR)
 		--file-ext html
 	@echo "Done."
 	@# Dealing with JS files
-	@echo "Minifying JS..."
+	@echo "Minifying JS…"
 	@mkdir -p "$(DIST_DIR)/assets/js"
 	@# Because we don't need the whole path, -printf drops the prefix in the
 	@# resulting $js variable. So _site/assets/js/foo.js becomes foo.js only
 	@for js in $$(find "$(SITE_DIR)"/assets/js -type f -name '*.js' -printf %P\\n); do \
-		npx terser "$(SITE_DIR)/assets/js/$${js}" --compress --mangle --output "$(DIST_DIR)/assets/js/$${js}"; \
+		pnpm dlx terser "$(SITE_DIR)/assets/js/$${js}" --compress --mangle --output "$(DIST_DIR)/assets/js/$${js}"; \
 		done
 	@echo "Done."
 	@# Dealing with CSS files
-	@echo "Minifying CSS..."
+	@echo "Minifying CSS…"
 	@# -printf drops _site/assets from the $css variable, making it easier
 	@#  to move files to dist/
 	@# Skip *.min.css since they're already minified
 	@for css in $$(find "$(SITE_DIR)/assets" -type f \( -name '*.css' -not -name '*.min.css' \) -printf %P\\n); do \
-		npx clean-css-cli -o "$(DIST_DIR)"/assets/$${css} "$(SITE_DIR)"/assets/$${css}; \
+		pnpm dlx clean-css-cli -o "$(DIST_DIR)"/assets/$${css} "$(SITE_DIR)"/assets/$${css}; \
 		done
 	@# Copy the untouched, already minified *.min.css files
 	@for mincss in $$(find "$(SITE_DIR)/assets" -type f -name '*.min.css' -printf %P\\n); do \

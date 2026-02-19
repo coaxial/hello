@@ -5,7 +5,9 @@
   "main": "weather.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky"
+    "prepare": "husky",
+    "build:ts": "tsc --project tsconfig.json && tsc --project functions/tsconfig.json",
+    "build": "pnpm run build:ts && bundle exec jekyll build"
   },
   "repository": {
     "type": "git",
@@ -31,7 +33,11 @@
     "lint-staged": "^16.2.7",
     "netlify-cli": "^17.23.1",
     "prettier": "^3.8.1",
-    "terser": "^5.17.7"
+    "terser": "^5.17.7",
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "@types/node-fetch": "^2.6.7",
+    "ts-node": "^10.9.0"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [

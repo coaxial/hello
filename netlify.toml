@@ -39,3 +39,6 @@
   from = '/*'
   to = '/woops'
   status = 404
+[functions]
+  directory = "functions"
+  node_bundler = "esbuild"
