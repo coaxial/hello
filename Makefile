@@ -6,7 +6,7 @@ DIST_DIR = dist
 all: dev
 
 dev: $(SITE_DIR)
-	@npx netlify dev
+	@JEKYLL_ENVIRONMENT=dev npx netlify dev --context dev
 
 clean:
 	-rm -rf .sass-cache .jekyll-metadata "$(VENDOR_DIR)" "$(DIST_DIR)" "$(SITE_DIR)"
