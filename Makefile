@@ -41,6 +41,7 @@ $(VENDOR_DIR)/fontawesome: $(VENDOR_DIR)
 	@sed -i 's/..\/webfonts/..\/vendor\/fontawesome\/webfonts/g' "$(VENDOR_DIR)"/fontawesome/css/brands.min.css
 
 $(SITE_DIR): $(VENDOR_DIR) $(VENDOR_DIR)/website-carbon-badges $(VENDOR_DIR)/fontawesome
+	@pnpm run build:ts  # Compile TS before Jekyll build
 	@export JEKYLL_ENV=production
 	@bundle exec jekyll build
 
