@@ -1,13 +1,13 @@
-const Sentry = require("@sentry/node");
+const sentry = require("@sentry/node");
 
-Sentry.init({
+sentry.init({
   dsn: process.env.SENTRY_DSN,
   environment: process.env.JEKYLL_ENVIRONMENT,
   integrations: [
-    Sentry.httpIntegration({
+    sentry.httpIntegration({
       trackIncomingRequestsAsSessions: false,
     }),
   ],
 });
 
-module.exports = Sentry;
+module.exports = sentry;

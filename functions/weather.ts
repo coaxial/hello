@@ -2,7 +2,7 @@
 
 const Sentry = require("./_shared/sentry");
 
-const fetch = require("node-fetch");
+const nodeFetch = require("node-fetch");
 
 interface Temp {
   celsius: number;
@@ -46,7 +46,7 @@ function handler(event: any, context: any, callback: (error: any, response: any)
   const outputFormat: string = `["${weatherInWords}", "${weatherIcon}", "${temperature}"]`;
   const url: string = `https://wttr.in/${process.env.WEATHER_LOCATION}?${metricUnits}&format=${outputFormat}`;
 
-  fetch(url)
+  nodeFetch(url)
     .then((response: any): Promise<any> => response.json())
     .then((json: any): void => {
       const HTTP_OK: number = 200;
