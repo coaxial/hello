@@ -7,3 +7,4 @@ _site
 .bundle
 assets/vendor
 dist/
+functions/dist/
