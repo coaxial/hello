@@ -4,7 +4,8 @@
   "description": "Functions powering hello",
   "main": "weather.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/coaxial/hello#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
+    "@sentry/node": "^10.39.0",
     "node-fetch": "^2.6.7",
     "website-carbon-badges": "^1.1.3"
   },
@@ -25,7 +27,21 @@
     "clean-css-cli": "^5.6.2",
     "fontawesome-subset": "^4.4.0",
     "html-minifier-terser": "^7.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "netlify-cli": "^17.23.1",
+    "prettier": "^3.8.1",
     "terser": "^5.17.7"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write"
+    ],
+    "*.{css,html}": [
+      "prettier --write"
+    ],
+    "*.html": [
+      "prettier --write"
+    ]
   }
 }
