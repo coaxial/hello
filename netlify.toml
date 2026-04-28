@@ -28,7 +28,7 @@
 [[redirects]]
   # Serve Plausible as a first-party script
   from = "/js/ascript.js"
-  to = "https://plausible.io/js/script.js"
+  to = "https://cloud.umami.is/script.js"
   status = 200
 [[redirects]]
   # Also proxy Plausible events
