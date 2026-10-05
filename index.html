@@ -11,14 +11,18 @@ permalink: /
 </div>
 <div class="contents">
   <p>
-    Hello, my name is Pierre, <span id="location">I currently live in {{
-      site.data.personal_info.current_location }}<span id="weather"></span> from
-      where I help businesses build better software.</span>
+    Hello, my name is Pierre,
+    <span id="location"
+      >I currently live in {{ site.data.personal_info.current_location }}<span
+        id="weather"
+      ></span>
+      from where I help businesses build better software.</span
+    >
   </p>
   <p>
     Over the last {{ "now" | date: "%Y" | minus: 2012 }} years, I've
-    successfully worked with companies in North America and Switzerland on
-    things like:
+    successfully worked with companies in North America, France, and Switzerland
+    on things like:
   </p>
   <ul>
     <li>Tackling technical debt and legacy code</li>
@@ -37,7 +41,9 @@ permalink: /
     <a href="https://github.com/maid/maid">Maid Ruby gem</a> (along with its
     original author <a href="http://www.benjaminoakes.com">Ben Oakes</a>). To
     see some of my code, have a look at my
-    <a href="{% link showcase/index.html %}">featured open source software contributions</a>.
+    <a href="{% link showcase/index.html %}"
+      >featured open source software contributions</a
+    >.
   </p>
   {% include blog/frontpage.html %}
   <p>
