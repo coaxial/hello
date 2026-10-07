@@ -1,6 +1,3 @@
----
----
-
 // Concatenate all CSS/SCSS files into this one so that there is only one CSS
 // file to download by the browser.
 @use "midnight";
@@ -15,6 +12,10 @@ $colors: (
   link: #ffcc00,
   text: #f0e7d5,
 );
+
+html {
+  background-color: #{map-get($colors, bg)};
+}
 
 .contents {
   // the original font size is a tad too small
