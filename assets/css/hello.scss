@@ -1,6 +1,10 @@
 ---
 ---
 
+// Two lines above are necessary for Jekyll to pick the file up and compile it.
+// Don't remove or you'll get a 404 on hello.css. Don't ask why either, I don't
+// remember.
+
 // Concatenate all CSS/SCSS files into this one so that there is only one CSS
 // file to download by the browser.
 @use "midnight";
@@ -15,6 +19,11 @@ $colors: (
   link: #ffcc00,
   text: #f0e7d5,
 );
+
+html,
+body {
+  background: #{map-get($colors, bg)};
+}
 
 .contents {
   // the original font size is a tad too small
