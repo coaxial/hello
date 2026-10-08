@@ -21,6 +21,7 @@ exclude:
   - package-lock.json
   - README.md
   - scripts/
+  - dist/
 
 author: "64b.it"
 title: "64b.it | Software Development & Quality Consulting"
