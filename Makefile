@@ -56,6 +56,10 @@ $(SITE_DIR): $(VENDOR_DIR) $(VENDOR_DIR)/website-carbon-badges $(VENDOR_DIR)/fon
 	@bundle exec jekyll build
 
 $(DIST_DIR): $(SITE_DIR)
+	@# Start from a clean dist: `cp -r` nests into an existing destination
+	@# (e.g. dist/assets/assets) and leaves stale files behind when the
+	@# workspace is restored from a build cache.
+	@rm -rf "$(DIST_DIR)"
 	@mkdir -p "$(DIST_DIR)"
 	@# Move all files to dist/ unchanged, next steps will minify HTML, JS,
 	@# CSS
