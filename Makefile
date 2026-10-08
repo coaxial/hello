@@ -28,9 +28,12 @@ $(VENDOR_DIR)/fontawesome: $(VENDOR_DIR)
 	@# Vendor fontawesome
 	@mkdir -p "$(VENDOR_DIR)"/fontawesome/css
 	@mkdir -p "$(VENDOR_DIR)"/fontawesome/webfonts
-	@# We only use glyphs in the brands namespace, no need for the rest
+	@# We only use the brands and solid namespaces, no need for the rest.
+	@# solid.min.css only carries the @font-face for "Font Awesome 6 Free";
+	@# the glyph rules themselves live in fontawesome.min.css.
 	@cp node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css "$(VENDOR_DIR)"/fontawesome/css/
 	@cp node_modules/@fortawesome/fontawesome-free/css/brands.min.css "$(VENDOR_DIR)"/fontawesome/css/
+	@cp node_modules/@fortawesome/fontawesome-free/css/solid.min.css "$(VENDOR_DIR)"/fontawesome/css/
 	@cp node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.* "$(VENDOR_DIR)"/fontawesome/webfonts/
 	@# Remove unneeded glyphs from fontawesome
 	@echo "Removing unused FontAwesome glyphs…"
@@ -39,6 +42,7 @@ $(VENDOR_DIR)/fontawesome: $(VENDOR_DIR)
 	@# Fix path to webfonts in CSS files
 	@sed -i 's/..\/webfonts/..\/vendor\/fontawesome\/webfonts/g' "$(VENDOR_DIR)"/fontawesome/css/fontawesome.min.css
 	@sed -i 's/..\/webfonts/..\/vendor\/fontawesome\/webfonts/g' "$(VENDOR_DIR)"/fontawesome/css/brands.min.css
+	@sed -i 's/..\/webfonts/..\/vendor\/fontawesome\/webfonts/g' "$(VENDOR_DIR)"/fontawesome/css/solid.min.css
 
 $(SITE_DIR): $(VENDOR_DIR) $(VENDOR_DIR)/website-carbon-badges $(VENDOR_DIR)/fontawesome
 	@pnpm run build:ts  # Compile TS before Jekyll build

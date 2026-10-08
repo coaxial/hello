@@ -10,6 +10,7 @@
 @use "midnight";
 @use "../vendor/fontawesome/css/fontawesome.min.css";
 @use "../vendor/fontawesome/css/brands.min.css";
+@use "../vendor/fontawesome/css/solid.min.css";
 @use "../vendor/website-carbon-badges/b.min.css";
 
 $breakpoint-desktop: 1024px;
@@ -230,5 +231,13 @@ ul > li {
   margin-bottom: 4em;
   ul > li {
     font-size: 1em;
+  }
+}
+
+.one {
+  #together {
+    p:not(:first-of-type) {
+      margin-top: 3em;
+    }
   }
 }
