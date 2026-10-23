@@ -5,7 +5,7 @@ sentry.init({
   environment: process.env.JEKYLL_ENVIRONMENT,
   integrations: [
     sentry.httpIntegration({
-      trackIncomingRequestsAsSessions: false,
+      sessions: false,
     }),
   ],
 });

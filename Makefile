@@ -1,4 +1,4 @@
-.PHONY: all dev clean build FORCE
+.PHONY: all dev clean build test FORCE
 VENDOR_DIR = assets/vendor
 SITE_DIR = _site
 DIST_DIR = dist
@@ -7,6 +7,9 @@ all: dev
 
 dev: $(SITE_DIR)
 	@JEKYLL_ENVIRONMENT=dev pnpm dlx netlify dev --context dev
+
+test:
+	@pnpm test
 
 clean:
 	-rm -rf .sass-cache .jekyll-metadata "$(VENDOR_DIR)" "$(DIST_DIR)" "$(SITE_DIR)"
@@ -55,7 +58,7 @@ $(SITE_DIR): $(VENDOR_DIR) $(VENDOR_DIR)/website-carbon-badges $(VENDOR_DIR)/fon
 	@export JEKYLL_ENV=production
 	@bundle exec jekyll build
 
-$(DIST_DIR): $(SITE_DIR)
+$(DIST_DIR): test $(SITE_DIR)
 	@# Start from a clean dist: `cp -r` nests into an existing destination
 	@# (e.g. dist/assets/assets) and leaves stale files behind when the
 	@# workspace is restored from a build cache.
