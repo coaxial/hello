@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: read
-  checks: write
 
 jobs:
   test:
@@ -32,7 +31,7 @@ jobs:
       - name: Run tests
         run: pnpm test --reporter=default --reporter=junit --outputFile.junit=test-results/junit.xml
 
-      - name: Publish test report
+      - name: Publish test summary
         uses: dorny/test-reporter@v3
         if: always()
         with:
