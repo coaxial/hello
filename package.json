@@ -36,7 +36,7 @@
     "prettier": "^3.9.10",
     "terser": "^5.51.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.0.0"
+    "typescript": "^7.0.2"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
