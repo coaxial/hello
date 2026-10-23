@@ -1,4 +1,4 @@
-.PHONY: all dev clean build FORCE
+.PHONY: all dev clean build test FORCE
 VENDOR_DIR = assets/vendor
 SITE_DIR = _site
 DIST_DIR = dist
@@ -7,6 +7,9 @@ all: dev
 
 dev: $(SITE_DIR)
 	@JEKYLL_ENVIRONMENT=dev pnpm dlx netlify dev --context dev
+
+test:
+	@pnpm test
 
 clean:
 	-rm -rf .sass-cache .jekyll-metadata "$(VENDOR_DIR)" "$(DIST_DIR)" "$(SITE_DIR)"
