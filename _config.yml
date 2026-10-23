@@ -22,6 +22,13 @@ exclude:
   - README.md
   - scripts/
   - dist/
+  - functions/
+  - tests/
+  - tsconfig.json
+  - vitest.config.mts
+  - pnpm-lock.yaml
+  - deno.lock
+  - mise.toml
 
 author: "64b.it"
 title: "64b.it | Software Development & Quality Consulting"

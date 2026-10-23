@@ -4,7 +4,7 @@
   "description": "Functions powering hello",
   "main": "weather.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest run",
     "prepare": "husky",
     "build:ts": "tsc --project tsconfig.json && tsc --project functions/tsconfig.json",
     "build": "pnpm run build:ts && bundle exec jekyll build"
@@ -36,7 +36,8 @@
     "prettier": "^3.9.10",
     "terser": "^5.51.2",
     "ts-node": "^10.9.2",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [

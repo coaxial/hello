@@ -17,7 +17,7 @@ interface ResponseBody {
   weather: Weather;
 }
 
-function tempToWords(celsius: number): string {
+export function tempToWords(celsius: number): string {
   if (celsius < 5) {
     return "rather cold";
   }
