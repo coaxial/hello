@@ -37,7 +37,7 @@ describe("greetings", () => {
     [14, "طاب مسائك", "afternoon"],
     [21, "مساء الخير", "evening"],
     [2, "مساء الخير", "evening"],
-  ])("shows the %3$s greeting at %i:00", async (hour, phrase, period) => {
+  ])("shows the correct greeting at %i:00", async (hour, phrase, period) => {
     setHour(hour);
 
     await loadGreetings();

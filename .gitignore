@@ -9,4 +9,5 @@ assets/vendor
 dist/
 functions/dist/
 assets/js/*.js
+test-results/
 deno.lock

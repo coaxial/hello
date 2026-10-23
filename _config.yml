@@ -24,6 +24,7 @@ exclude:
   - dist/
   - functions/
   - tests/
+  - test-results/
   - tsconfig.json
   - vitest.config.mts
   - pnpm-lock.yaml
