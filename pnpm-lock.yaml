@@ -31,8 +31,8 @@ importers:
         specifier: ^5.6.2
         version: 5.6.3
       fontawesome-subset:
-        specifier: ^4.4.0
-        version: 4.4.0(@fortawesome/fontawesome-free@6.5.2)
+        specifier: ^4.6.0
+        version: 4.6.0(@fortawesome/fontawesome-free@6.5.2)
       html-minifier-terser:
         specifier: ^7.2.0
         version: 7.2.0
@@ -46,14 +46,14 @@ importers:
         specifier: ^17.23.1
         version: 17.23.1(@types/node@20.19.33)(picomatch@2.3.1)
       prettier:
-        specifier: ^3.8.1
-        version: 3.8.1
+        specifier: ^3.9.10
+        version: 3.9.10
       terser:
-        specifier: ^5.17.7
-        version: 5.30.4
+        specifier: ^5.51.2
+        version: 5.51.2
       ts-node:
-        specifier: ^10.9.0
-        version: 10.9.1(@types/node@20.19.33)(typescript@5.1.6)
+        specifier: ^10.9.2
+        version: 10.9.2(@types/node@20.19.33)(typescript@5.1.6)
       typescript:
         specifier: ^5.0.0
         version: 5.1.6
@@ -999,30 +999,35 @@ packages:
     engines: {node: '>= 10.0.0'}
     cpu: [arm]
     os: [linux]
+    libc: [glibc]
 
   '@parcel/watcher-linux-arm64-glibc@2.4.0':
     resolution: {integrity: sha512-QuJTAQdsd7PFW9jNGaV9Pw+ZMWV9wKThEzzlY3Lhnnwy7iW23qtQFPql8iEaSFMCVI5StNNmONUopk+MFKpiKg==}
     engines: {node: '>= 10.0.0'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@parcel/watcher-linux-arm64-musl@2.4.0':
     resolution: {integrity: sha512-oyN+uA9xcTDo/45bwsd6TFHa7Lc7hKujyMlvwrCLvSckvWogndCEoVYFNfZ6JJ2KNL/6fFiGPcbjp8jJmEh5Ng==}
     engines: {node: '>= 10.0.0'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@parcel/watcher-linux-x64-glibc@2.4.0':
     resolution: {integrity: sha512-KphV8awJmxU3q52JQvJot0QMu07CIyEjV+2Tb2ZtbucEgqyRcxOBDMsqp1JNq5nuDXtcCC0uHQICeiEz38dPBQ==}
     engines: {node: '>= 10.0.0'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@parcel/watcher-linux-x64-musl@2.4.0':
     resolution: {integrity: sha512-7jzcOonpXNWcSijPpKD5IbC6xC7yTibjJw9jviVzZostYLGxbz8LDJLUnLzLzhASPlPGgpeKLtFUMjAAzM+gSA==}
     engines: {node: '>= 10.0.0'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@parcel/watcher-wasm@2.4.0':
     resolution: {integrity: sha512-MNgQ4WCbBybqQ97KwR/hqJGYTg3+s8qHpgIyFWB2qJOBvoJWbXuJGmm4ZkPLq2bMaANqCZqrXwmKYagZTkMKZA==}
@@ -2489,8 +2494,8 @@ packages:
       debug:
         optional: true
 
-  fontawesome-subset@4.4.0:
-    resolution: {integrity: sha512-kcK1ELa/Gq4R2+gKxzeFbLl0uzSJBeWsjtZPLLf5mCJEfTY9gt/lAOgW7opGaG1ZaFMa88Qu1ghuRsLUkmobYg==}
+  fontawesome-subset@4.6.0:
+    resolution: {integrity: sha512-StfmCPwQUUt9wsIJDK404QDz/FkidvpNB5mZy2X36DRPorgXj9VslUwdlijxrHqPIXoA0baC0ucvdOCEQeIHEQ==}
     peerDependencies:
       '@fortawesome/fontawesome-free': '>=5.12.0'
       '@fortawesome/fontawesome-pro': '>=5.12.0'
@@ -4024,8 +4029,8 @@ packages:
     resolution: {integrity: sha512-ESF23V4SKG6lVSGZgYNpbsiaAkdab6ZgOxe52p7+Kid3W3u3bxR4Vfd/o21dmN7jSt0IwgZ4v5MUd26FEtXE9w==}
     engines: {node: '>= 0.8.0'}
 
-  prettier@3.8.1:
-    resolution: {integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==}
+  prettier@3.9.10:
+    resolution: {integrity: sha512-skGHTH1Yb9QvaTC4hWnRTzEYtCpApF0UMBPz+t/0ZPzP8ihefo/btKd+QA7pUE0fEwA1SbS/NmhyEcstdXOIdA==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -4636,8 +4641,8 @@ packages:
     resolution: {integrity: sha512-flFL3m4wuixmf6IfhFJd1YPiLiMuxEc8uHRM1buzIeZPm22Au2pDqBJQgdo7n1WfPU1ONFGv7YDwpFBmHGF6lg==}
     engines: {node: '>=12'}
 
-  terser@5.30.4:
-    resolution: {integrity: sha512-xRdd0v64a8mFK9bnsKVdoNP9GQIKUAaJPTaqEQDL4w/J8WaW4sWXXoMZ+6SimPkfT5bElreXf8m9HnmPc3E1BQ==}
+  terser@5.51.2:
+    resolution: {integrity: sha512-bWnjSNscmuI+GJze6ZupnHP8G/cTcsJF+bXCeQknk2SHQsgbNJnLrqiH9jZ2W4STPVXH2mDKKRX3iwPhc9Cn/Q==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -4726,8 +4731,8 @@ packages:
   triple-beam@1.3.0:
     resolution: {integrity: sha512-XrHUvV5HpdLmIj4uVMxHggLbFSZYIn7HEWsqePZcI50pco+MPqJ50wMGY794X7AOOhxOBAjbkqfAbEe/QMp2Lw==}
 
-  ts-node@10.9.1:
-    resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
+  ts-node@10.9.2:
+    resolution: {integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==}
     hasBin: true
     peerDependencies:
       '@swc/core': '>=1.2.50'
@@ -5494,7 +5499,7 @@ snapshots:
       strip-ansi: 7.1.2
       supports-color: 9.4.0
       terminal-link: 3.0.0
-      ts-node: 10.9.1(@types/node@20.19.33)(typescript@5.1.6)
+      ts-node: 10.9.2(@types/node@20.19.33)(typescript@5.1.6)
       typescript: 5.1.6
       uuid: 9.0.1
       yargs: 17.7.2
@@ -7854,7 +7859,7 @@ snapshots:
     optionalDependencies:
       debug: 4.3.4
 
-  fontawesome-subset@4.4.0(@fortawesome/fontawesome-free@6.5.2):
+  fontawesome-subset@4.6.0(@fortawesome/fontawesome-free@6.5.2):
     dependencies:
       lodash: 4.17.21
       mkdirp: 2.1.6
@@ -8158,7 +8163,7 @@ snapshots:
       entities: 4.5.0
       param-case: 3.0.4
       relateurl: 0.2.7
-      terser: 5.30.4
+      terser: 5.51.2
 
   http-cache-semantics@4.1.1: {}
 
@@ -9552,7 +9557,7 @@ snapshots:
 
   prelude-ls@1.1.2: {}
 
-  prettier@3.8.1: {}
+  prettier@3.9.10: {}
 
   pretty-format@27.5.1:
     dependencies:
@@ -10216,7 +10221,7 @@ snapshots:
       ansi-escapes: 5.0.0
       supports-hyperlinks: 2.2.0
 
-  terser@5.30.4:
+  terser@5.51.2:
     dependencies:
       '@jridgewell/source-map': 0.3.6
       acorn: 8.15.0
@@ -10305,7 +10310,7 @@ snapshots:
 
   triple-beam@1.3.0: {}
 
-  ts-node@10.9.1(@types/node@20.19.33)(typescript@5.1.6):
+  ts-node@10.9.2(@types/node@20.19.33)(typescript@5.1.6):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.8
