@@ -33,11 +33,7 @@ function tempToWords(celsius: number): string {
   return "unknown";
 }
 
-export const handler = (
-  event: any,
-  context: any,
-  callback: (error: any, response: any) => void,
-): void => {
+export const handler = async (event: any, context: any): Promise<any> => {
   const weatherInWords: string = "%C";
   const weatherIcon: string = "%c";
   const temperature: string = "%t";
@@ -47,31 +43,30 @@ export const handler = (
   const outputFormat: string = `["${weatherInWords}", "${weatherIcon}", "${temperature}"]`;
   const url: string = `https://wttr.in/${process.env.WEATHER_LOCATION}?${metricUnits}&format=${outputFormat}`;
 
-  nodeFetch(url)
-    .then((response: any): Promise<any> => response.json())
-    .then((json: any): void => {
-      const HTTP_OK: number = 200;
-      const weather: Weather = {
-        words: json[0].toLowerCase(),
-        icon: json[1],
-      };
-      const temp: Temp = {
-        celsius: parseInt(json[2]),
-        fahrenheit: Math.round(parseInt(json[2]) * (9 / 5) + 32),
-        words: tempToWords(parseInt(json[2])),
-      };
+  try {
+    const response: any = await nodeFetch(url);
+    const json: any = await response.json();
+    const HTTP_OK: number = 200;
+    const weather: Weather = {
+      words: json[0].toLowerCase(),
+      icon: json[1],
+    };
+    const temp: Temp = {
+      celsius: parseInt(json[2]),
+      fahrenheit: Math.round(parseInt(json[2]) * (9 / 5) + 32),
+      words: tempToWords(parseInt(json[2])),
+    };
 
-      return callback(null, {
-        statusCode: HTTP_OK,
-        body: JSON.stringify({ temp, weather } as ResponseBody),
-      });
-    })
-    .catch((error: any): void => {
-      Sentry.captureException(error);
+    return {
+      statusCode: HTTP_OK,
+      body: JSON.stringify({ temp, weather } as ResponseBody),
+    };
+  } catch (error: any) {
+    Sentry.captureException(error);
 
-      return callback(null, {
-        statusCode: 500,
-        body: JSON.stringify({ error }),
-      });
-    });
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ error }),
+    };
+  }
 };
