@@ -58,7 +58,7 @@ $(SITE_DIR): $(VENDOR_DIR) $(VENDOR_DIR)/website-carbon-badges $(VENDOR_DIR)/fon
 	@export JEKYLL_ENV=production
 	@bundle exec jekyll build
 
-$(DIST_DIR): $(SITE_DIR)
+$(DIST_DIR): test $(SITE_DIR)
 	@# Start from a clean dist: `cp -r` nests into an existing destination
 	@# (e.g. dist/assets/assets) and leaves stale files behind when the
 	@# workspace is restored from a build cache.
