@@ -32,24 +32,11 @@ jobs:
       - name: Run tests
         run: pnpm test --reporter=default --reporter=junit --outputFile.junit=test-results/junit.xml
 
-      - name: Publish test summary
-        uses: dorny/test-reporter@v3
+      - name: Publish test results
+        uses: EnricoMi/publish-unit-test-result-action@v2
         if: always()
         with:
-          name: Vitest
-          path: test-results/junit.xml
-          reporter: java-junit
-
-      - name: Save test summary
-        if: always() && github.event_name == 'pull_request'
-        run: cp "$GITHUB_STEP_SUMMARY" test-results/summary.md
-
-      - name: Comment test results on the pull request
-        if: >-
-          always()
-          && github.event_name == 'pull_request'
-          && github.event.pull_request.head.repo.full_name == github.repository
-        uses: marocchino/sticky-pull-request-comment@v3
-        with:
-          header: vitest
-          path: test-results/summary.md
+          files: test-results/junit.xml
+          check_run: false
+          comment_title: Test results
+          job_summary: true
